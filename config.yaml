@@ -1,3 +1,19 @@
-baseURL: http://example.org/
+baseURL: https://elstoc.github.io/luadocs/
 languageCode: en-us
-title: My New Hugo Site
+title: darktable lua documentation
+theme:
+  - hugo-darktable-docs-theme
+  - hugo-bootstrap-bare
+markup:
+  highlight:
+    style: algol_nu
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+module:
+  mounts:
+    - source: ./themes//hugo-darktable-docs-theme/assets/node_modules/fork-awesome/fonts
+      target: static/fonts
+
