@@ -1,4 +1,4 @@
-baseURL:  https://elstoc.github.io/luadocs/
+baseURL:  https://darktable-org.github.io/luadocs/
 languageCode: en-us
 title: darktable lua documentation
 theme:
