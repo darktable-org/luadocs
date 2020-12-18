@@ -1,7 +1,7 @@
 ---
 title: examples
 id: examples
-weight: 40
+weight: 30
 draft: false
 author: "people"
 ---

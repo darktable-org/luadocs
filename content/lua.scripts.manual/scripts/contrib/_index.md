@@ -1,7 +1,6 @@
 ---
 title: contrib
 id: contrib
-weight: 30
-draft: false
+weight: 20
 author: "people"
 ---

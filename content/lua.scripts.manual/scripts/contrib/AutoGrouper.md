@@ -1,5 +1,5 @@
 ---
-title: AugoGrouper
+title: AutoGrouper
 id: AugoGrouper
 weight: 10
 draft: false
@@ -8,7 +8,7 @@ author: "people"
 
 ## Name
 
-AugoGrouper.lua - add the module "Auto Group" to darktable's lighttable view
+AutoGrouper.lua - add the module "Auto Group" to darktable's lighttable view
 
 ## Description
 
