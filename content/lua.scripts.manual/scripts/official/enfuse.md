@@ -17,7 +17,7 @@ It only works on ldr images (like, JPEG).
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 * it creates a new lighttable module
 
 ## Additional Software Required

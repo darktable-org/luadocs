@@ -16,7 +16,7 @@ darktable geoJSON export script
 
 ## Usage
 
-* require this script from your main Lua file
+* start this script using script manager
 
 ## Additional Software Required
 

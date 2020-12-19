@@ -16,7 +16,7 @@ This script adds keyboard shortcuts and buttons to copy/paste metadata between i
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 * it adds buttons to the selected images module
 * it adds two keyboard shortcuts
 

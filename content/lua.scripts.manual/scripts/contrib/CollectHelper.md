@@ -28,12 +28,10 @@ Button Behavior:
 
 ## Usage
 
-Install: (see here for more detail: https://github.com/darktable-org/lua-scripts )
- 1) Copy this file in to your "lua/contrib" folder where all other scripts reside. 
- 2) Require this file in your luarc file, as with any other dt plug-in
+* start CollectHelper with script manager.
 
-Select the photo you wish to change you collection based on.
-In the "Selected Images" module click on "Collect on this Image"
+* Select the photo you wish to change you collection based on.
+  In the "Selected Images" module click on "Collect on this Image"
 
 ## Additional Software Required
 

@@ -18,7 +18,7 @@ then the sorting and filtering display is a little clearer.
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 
 ## Additional Software Required
 

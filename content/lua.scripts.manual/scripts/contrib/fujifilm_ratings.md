@@ -16,10 +16,11 @@ Support for importing Fujifilm in-camera ratings in darktable.
 
 ## Usage
 
+Start this script from script manager
 
 ## Additional Software Required
 
-- exiftool (https://www.sno.phy.queensu.ca/~phil/exiftool/)
+exiftool (https://www.sno.phy.queensu.ca/~phil/exiftool/)
 
 ## Limitations
 

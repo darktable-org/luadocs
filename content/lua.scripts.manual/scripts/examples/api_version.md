@@ -16,7 +16,7 @@ darktable script to show the Lua API version in the preferences
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager.  darktable must be running in lua debug mode in a terminal to see the output.
 
 ## Additional Software Required
 

@@ -16,7 +16,7 @@ A simple script that will automatically delete all tags that are not attached to
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 * restart darktable
 
 ## Additional Software Required

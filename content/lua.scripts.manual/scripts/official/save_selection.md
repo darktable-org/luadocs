@@ -16,7 +16,7 @@ Simple shortcuts to have multiple selection buffers
 
 ## Usage
 
-* require this file from your main lua config file:
+* start this script from script manager
 * go to configuration => preferences => lua
 * set the shortcuts you want to use
 

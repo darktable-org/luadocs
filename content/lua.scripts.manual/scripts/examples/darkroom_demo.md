@@ -17,7 +17,7 @@ darkroom mode using lua.
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 
 ## Additional Software Required
 

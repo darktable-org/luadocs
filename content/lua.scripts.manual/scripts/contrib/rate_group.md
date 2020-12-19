@@ -12,7 +12,7 @@ rate_group.lua - rate groups of images
 
 ## Description
 
-Script to provide shortcuts for rating or rejecting all images within a group;
+Provide shortcuts for rating or rejecting all images within a group;
 particularly useful for RAW+JPEG shooters employing a star rating workflow
 like the below:
 

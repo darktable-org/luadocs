@@ -16,9 +16,7 @@ prints the operating system
 
 ## Usage
 
-* require this script from your main lua file
-  To do this add this line to the file .config/darktable/luarc: 
-require "running_os"
+* start this script from script manager
 
 ## Additional Software Required
 

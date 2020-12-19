@@ -18,7 +18,7 @@ The medata will be displayed as an overlay on the image in lighttable mode
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 * set a command to run on all image, this command should output text on stdout
 * enable image file generation
 

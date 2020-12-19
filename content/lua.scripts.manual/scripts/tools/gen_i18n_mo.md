@@ -17,6 +17,7 @@ gen_i18n_mo finds all the .po files scattered throughout the script tree, compil
 
 ## Usage
 
+* start this script from script manager.  Stop the script after it runs or it will regenerate the translation files each time darktable starts.
 
 ## Additional Software Required
 

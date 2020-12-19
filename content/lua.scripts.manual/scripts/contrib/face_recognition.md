@@ -25,7 +25,7 @@ People|Youtoo.jpg
 
 ## Usage
 
-* require this file from your main luarc config file.
+* start this script from script manager.
 
 ## Additional Software Required
 

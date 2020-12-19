@@ -16,7 +16,7 @@ A simple script that will automatically delete all tags longer than a set length
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 * set the the maximum length in darktable's preference
 * restart darktable
 

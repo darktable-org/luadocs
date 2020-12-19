@@ -15,13 +15,14 @@ RL_out_sharp.lua - Richardson-Lucy output sharpening using GMic
 This script provides a new target storage "RL output sharpen". 
 Images exported will be sharpened using GMic (RL deblur algorithm)
 
-  EXAMPLE
-    set sigma = 0.7, iterations = 10, jpeg output quality = 95,
-    to correct blur due to image resize for web usage
+### EXAMPLE
+
+set sigma = 0.7, iterations = 10, jpeg output quality = 95,
+to correct blur due to image resize for web usage
 
 ## Usage
 
-* require this script from main lua file
+* start this script from script manager
 * in lua preferences, select the GMic cli executable
 * from "export selected", choose "RL output sharpen"
 * configure output folder 

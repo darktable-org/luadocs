@@ -22,7 +22,7 @@ darktable.
 
 ## Usage
 
-
+* start this script from script manager
 
 ## Additional Software Required
 

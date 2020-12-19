@@ -16,13 +16,13 @@ This script provides another storage (export target) for darktable.  Selected
 images are exported in the specified format to temporary storage.  The images are aligned
 if the user requests it. When the images are ready, imagemagick is launched and uses
 the selected evaluate-sequence operator to process the images.  The output file is written
-to a filename representing the imput files in the format specified by the user.  The resulting 
+to a filename representing the input files in the format specified by the user.  The resulting 
 image is imported into the film roll.  The source images can be tagged as part of the file 
 creation so that  a user can later find the contributing images.
 
 ## Usage
 
-* require this script from your main lua file
+* start this script using script manager
 * select the images to process with image_stack
 * in the export dialog select "image stack" and select the format and bit depth for the
   exported image

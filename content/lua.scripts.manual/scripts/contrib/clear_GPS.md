@@ -16,9 +16,9 @@ This shortcut removes the GPS coordinate data from the selected images.
 
 ## Usage
 
-* require this script from your main lua file
+* start the script from script manager
 * select an image or images
-* click the shortcut, clear GPS data
+* click the shortcut, or the button in selected images to clear GPS data
 
 ## Additional Software Required
 

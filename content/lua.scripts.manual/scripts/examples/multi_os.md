@@ -24,7 +24,7 @@ by hovering over the image and pressing the key combination.
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 * start darktable, open prefreences, go to lua options and update the executable location if you are running Windows or MacOS, then restart darktable.
 * select an image or images
 * click the button to extract the jpeg

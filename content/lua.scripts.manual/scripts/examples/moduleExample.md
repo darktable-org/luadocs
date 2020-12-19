@@ -19,9 +19,7 @@ https://www.darktable.org/lua-api/index.html.php#darktable_new_widget
 
 ## Usage
 
-* require this script from your luarc file
-  To do this add this line to the file .config/darktable/luarc: 
-require "examples/moduleExample"
+* start this script from script manager
 
 * it creates a new example lighttable module
 

@@ -21,15 +21,17 @@ This script provides helpers to edit image files with programs external to darkt
 
 ## Usage
 
-* require this script from main lua file
+* start this script with script manager
   
--- setup --
+### setup
+
 * in "preferences/lua options" configure name and path/command of external programs
 * note that if a program name is left empty, that and all following entries will be ignored
 * in "preferences/shortcuts/lua" configure shortcuts for external programs (optional)
 * whenever programs preferences are changed, in lighttable/external editors, press "update list"
 
--- use --
+### use
+
 * in the export dialog choose "collection" and select the format and bit depth for the
    exported image
 * press "export"

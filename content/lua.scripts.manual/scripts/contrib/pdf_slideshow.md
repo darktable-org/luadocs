@@ -17,7 +17,7 @@ one per slide.
 
 ## Usage
 
-* require this file from your main lua config file:
+* start this script from script manager
 
 This plugin will add a new exporter that will allow you to generate a pdf slideshow.
 The interface will let you add:
@@ -27,7 +27,7 @@ The interface will let you add:
 Each slide will contain a single picture with a label at the bottom with the
 format (all fields can be the empty string):
 
-   <global title> / <image creator> / <image title>
+   \<global title\> / \<image creator\> / \<image title\>
 
 ## Additional Software Required
 

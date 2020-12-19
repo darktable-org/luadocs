@@ -8,19 +8,19 @@ author: "people"
 
 ## Name
 
-AutoGrouper.lua - add the module "Auto Group" to darktable's lighttable view
+AutoGrouper.lua - automatically group images based on time
 
 ## Description
 
-This plugin adds the module "Auto Group" to darktable's lighttable view
+This plugin groups images based on the time they were shot.  Images shot close
+together in time are grouped together.  The interval of time to separate groups
+is configurable.
 
 ## Usage
 
-Install: (see here for more detail: https://github.com/darktable-org/lua-scripts )
- 1) Copy this file in to your "lua/contrib" folder where all other scripts reside. 
- 2) Require this file in your luarc file, as with any other dt plug-in
+Start the module using script manager.
 
-Set a gap amount in second which will be used to determine when images should no 
+Set a gap amount, in seconds, which will be used to determine when images should no 
 longer be added to a group. If an image is more then the specified amount of time
 from the last image in the group it will not be added. Images without timestamps 
 in exif data will be ignored.

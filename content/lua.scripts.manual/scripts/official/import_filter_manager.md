@@ -20,7 +20,7 @@ directly registering the pre-import event.
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 * also require some files with import filters, for example import_filters.lua.
   it is important to add them AFTER this one!
 

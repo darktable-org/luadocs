@@ -23,7 +23,7 @@ leaders to hide the original files.
 
 ## Usage
 
-* require this script from your main lua file
+* start this script using script manager
 * trigger conversion on selected/hovered images by shortcut (set shortcut in settings dialog)
 * it is also possible to have the script run after importing a collection (optin, since it is not that fast)
 

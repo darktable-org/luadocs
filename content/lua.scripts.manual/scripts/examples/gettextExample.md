@@ -29,12 +29,11 @@ So, this is why we create a local variagle gettext = dt.gettext, so
 xgettext recognises gettext.gettext as a function but not dt.gettext.gettext
 
 To create a .mo file run:
-msgfmt -v gettextExample.po -o gettextExample.mo
+`msgfmt -v gettextExample.po -o gettextExample.mo`
 
 ## Usage
 
-* require this script from your main lua file (Add 'require "gettextExample"' to luarc.)
-* copy the script to: .config/darktable/lua/
+* start this script from script manager
 * copy the gettextExample.mo to .config/darktable/lua/de_DE/LC_MESSAGES
 
 You need to start darktable with the Lua debug option: darktable -d lua
@@ -42,9 +41,11 @@ $LANG must set to: de_DE
 
 The script run on darktable startup and should output this three lines:
 
+```
 LUA ERROR Hello World!
 LUA ERROR Bild
 LUA ERROR Hallo Welt!
+```
 
 ## Additional Software Required
 

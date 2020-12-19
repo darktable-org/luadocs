@@ -12,11 +12,11 @@ slideshowMusic.lua - play music during a slideshow
 
 ## Description
 
-darktable Script to play music during a Slideshow
+darktable script to play music during a Slideshow
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 
 ## Additional Software Required
 

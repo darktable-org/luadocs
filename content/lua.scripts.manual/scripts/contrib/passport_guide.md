@@ -21,7 +21,7 @@ guides for cropping passport photos based on documents from the Finnish police
 * (optional) add the line:
   "plugins/darkroom/clipping/extra_aspect_ratios/passport 36x47mm=47:36"
   to $CONFIGDIR/darktablerc
-* when using the cropping tool, select "passport" as guide and if you added the line in yout rc
+* when using the cropping tool, select "passport" as guide and if you added the line in your luarc
   select "passport 36x47mm" as aspect
 
 ## Additional Software Required

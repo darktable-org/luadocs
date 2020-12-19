@@ -16,7 +16,7 @@ darktable KML export script
 
 ## Usage
 
-* require this script from your main Lua file
+* start this script from script manager
 * when choosing file format, pick JPEG or PNG as Google Earth doesn't support other formats
 
 ## Additional Software Required

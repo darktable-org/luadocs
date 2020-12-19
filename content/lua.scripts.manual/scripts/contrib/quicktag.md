@@ -9,12 +9,13 @@ author: "people"
 ## Name
 
 quicktag.lua - add shortcuts to speed up tagging
+
 ## Description
 
 For faster attaching your favorite tags, the script adds shortcuts and
  the module "quicktag" in lighttable mode with a changeable number of buttons.
- To each button a tag can be assigned. If the tags do not exist in your database,
- they are added to the database once they get the first time attached to an image.
+ A tag can be assigned to each button. If the tags do not exist in your database,
+ they are added to the database the first time they are attached to an image.
 
  The number of buttons/shortcuts can be changed in the lua preferences.
  Changes in the number require a restart of darktable.

@@ -16,7 +16,7 @@ prints "hello world" to the screen when darktable starts
 
 ## Usage
 
-* require this file from your main lua config file:
+* start this script from script manager
 
 ## Additional Software Required
 

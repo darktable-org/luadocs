@@ -16,7 +16,7 @@ darktable script to show the different preference types that are possible with L
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 
 ## Additional Software Required
 

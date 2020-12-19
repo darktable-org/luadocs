@@ -16,8 +16,7 @@ styles and exports them to a location of their choosing.
 
 ## Usage
 
-Add the following line to .config/darktable/luarc to enable this lightable module: 
-  require "contrib/exportLut"
+Start this script from script manager.
 
 ## Additional Software Required
 

@@ -21,7 +21,7 @@ This script goes along with the import filter manager. It adds two filters:
 
 ## Usage
 
-* require this script from your main lua file AFTER import_filter_manager.lua
+* start this script from script manager AFTER import_filter_manager.lua
 
 ## Additional Software Required
 

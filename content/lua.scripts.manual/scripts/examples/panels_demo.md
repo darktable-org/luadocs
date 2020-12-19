@@ -18,7 +18,7 @@ hiding all, then showing all.  Finally, the original panel visibility is restore
 
 ## Usage
 
-* require this script from your main lua file
+* start this script from script manager
 
 ## Additional Software Required
 

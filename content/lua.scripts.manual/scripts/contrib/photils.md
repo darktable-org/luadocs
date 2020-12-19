@@ -20,9 +20,7 @@ photils.lua - auto tag images based on feature recognition
 
 ## Usage
 
-* require this script from your main lua file
-  To do this add this line to the file .config/darktable/luarc:
-  require "contrib/photils"
+* start this script from script manager
 * Select an image
 * Press "get tags"
 * Select the tags you want from a list of suggestions

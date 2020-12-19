@@ -19,7 +19,7 @@ This plugin will add a widget at the bottom of the left column in lighttable mod
 
 ## Usage
 
-* require this file from your main lua config file:
+* start this script from script manager
 
 ## Additional Software Required
 

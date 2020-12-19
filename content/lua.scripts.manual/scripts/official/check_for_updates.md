@@ -17,8 +17,8 @@ when there is something. it will only check on startup and only once a week.
 
 ## Usage
 
-* install luasec and cjson for Lua 5.3 on your system
-* require this script from your main lua file
+* install luasec and cjson for Lua 5.3 on your system.  [Luarocks](luarocks.org) is a good source for lua packages.
+* start this script from script manager
 * restart darktable
 
 ## Additional Software Required

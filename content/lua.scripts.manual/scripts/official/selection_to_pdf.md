@@ -20,7 +20,7 @@ Plugin allows you to choose how many thumbnails you need per row
 
 ## Usage
 
-* require this file from your main lua config file:
+* start this script from script manager
 
 ## Additional Software Required
 

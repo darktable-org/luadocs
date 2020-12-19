@@ -29,7 +29,7 @@ It was designed for the specific use case of rapidly transferring images
 from a customary source (e.g., a staging directory on the local disk)
 to a customary destination (e.g., a directory on a NAS device).
 
-Instructions for operation:
+### Instructions for operation:
 
 1. Select the set of images you want to copy.
 
