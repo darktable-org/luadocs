@@ -11,7 +11,7 @@ author: "people"
 Lua allows you to manipulate preferences. Lua has its own namespace for preferences and
 you can't access nor write normal darktable preferences.
 Preference handling functions take a _script_ parameter. This is a string used to avoid
-name collision in preferences (i.e namespace). Set it to something unique, usually the
+name collision in preferences \(i.e namespace\). Set it to something unique, usually the
 name of the script handling the preference.
 Preference handling functions can't guess the type of a parameter. You must pass the type
 of the preference you are handling.
@@ -38,8 +38,8 @@ function(
 ```
 
 Creates a new preference entry in the Lua tab of the preference screen. If this function
-is not called the preference can't be set by the user (you can still read and write invisible
-preferences).
+is not called the preference can't be set by the user \(you can still read and write invisible
+preferences\).
 
 * **script** - _string_ - Invisible prefix to guarantee unicity of preferences.
 * **name** - _string_ - A unique name used with the script part to identify the preference.

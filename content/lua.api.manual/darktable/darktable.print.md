@@ -7,9 +7,9 @@ author: "people"
 ---
 
 ```
-function\(
+function(
   message : string
-\)
+)
 ```
 
 Will print a string to the darktable control log (the long overlaid window that appears over

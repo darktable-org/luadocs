@@ -8,8 +8,8 @@ author: "people"
 
 This subtable contains function and data to manipulate the darktable user interface with
 Lua.
-Most of these function won't do anything if the GUI is not enabled (i.e you are using the
-command line version darktable-cli instead of darktable).
+Most of these function won't do anything if the GUI is not enabled \(i.e you are using the
+command line version darktable-cli instead of darktable\).
 
 # darktable.gui.action_images
 
@@ -223,8 +223,8 @@ Display an image in darkroom view.
 The lighttable view
 
 Attributes:
-* [has_tostring](../Attributes#has_tostring)
-* [parent](../Attributes#parent) : [types.dt_lua_view_t](../../types/dt_lua_view_t)
+* [has_tostring](../../Attributes#has_tostring)
+* [parent](../../Attributes#parent) : [types.dt_lua_view_t](../../types/dt_lua_view_t)
 
 ### darktable.gui.views.lighttable.is_image_visible
 

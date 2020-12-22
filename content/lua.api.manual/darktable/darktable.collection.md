@@ -7,7 +7,7 @@ author: "people"
 ---
 
 Allows to access the currently worked on images, i.e the ones selected by the collection
-lib. Filtering (rating etc) does not change that collection.
+lib. Filtering \(rating etc\) does not change that collection.
 
 # darktable.collection.#
 

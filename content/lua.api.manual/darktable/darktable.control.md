@@ -27,7 +27,7 @@ function(
 
 Runs a function in the background. This function will be run at a later point, after luarc has
 finished running. If you do a loop in such a function, please check darktable.control.ending
-in your loop to finish the function when DT exits
+in your loop to finish the function when darktable exits
 
 * **function** - _function_ - The call to dispatch
 * **...** - _anything_ - extra parameters to pass to the function

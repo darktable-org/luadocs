@@ -56,7 +56,7 @@ function(
 ) : string
 ```
 
-Similar to the system function type() but it will return the real type instead of _userdata_
+Similar to the system function type\(\) but it will return the real type instead of _userdata_
 for darktable specific objects.
 
 * **object** - _anything_ - The object whose type must be reported.

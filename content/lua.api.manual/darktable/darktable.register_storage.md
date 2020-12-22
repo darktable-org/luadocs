@@ -19,7 +19,7 @@ function(
 ```
 
 This function will add a new storage implemented in Lua.
-A storage is a module that is responsible for handling images once they have been generated during export. Examples of core storages include filesystem, e-mail, facebook...
+A storage is a module that is responsible for handling images once they have been generated during export. Examples of core storages include filesystem, e-mail, pwigo...
 
 * **plugin_name** - _string_ - A unique name for the plugin.
 * **name** - _string_ - A human readable name for the plugin.
