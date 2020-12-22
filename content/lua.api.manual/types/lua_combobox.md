@@ -8,9 +8,9 @@ author: "people"
 
 `dt_type`
 
-A widget with multiple text entries in a menu
+A widget with multiple text entries in a menu.
 This widget can be set as editable at construction time.
-If it is editable the user can type a value and is not constrained by the values in the menu
+If it is editable the user can type a value and is not constrained by the values in the menu.
 
 Attributes:
 
@@ -27,10 +27,10 @@ This widget has no extra registration parameters
 
 `string`
 
-The text content of the selected entry, can be nil
-You can set it to a number to select the corresponding entry from the menu
-If the combo box is editable, you can set it to any string
-You can set it to nil to deselect all entries
+The text content of the selected entry, can be nil.
+You can set it to a number to select the corresponding entry from the menu.
+If the combobox is editable, you can set it to any string.
+You can set it to nil to deselect all entries.
 
 Attributes:
 
@@ -40,10 +40,10 @@ Attributes:
 
 `integer`
 
-The index of the selected entry, or 0 if nothing is selected
+The index of the selected entry, or 0 if nothing is selected.
 You can set it to a number to select the corresponding entry from the menu, or to 0 to
-select nothing
-You can set it to nil to deselect all entries
+select nothing.
+You can set it to nil to deselect all entries.
 
 Attributes:
 
@@ -54,8 +54,8 @@ Attributes:
 `string`
 
 The various menu entries.
-You can add new entries by writing to the first element beyond the end
-You can removes entries by setting them to nil
+You can add new entries by writing to the first element beyond the end.
+You can removes entries by setting them to nil.
 
 Attributes:
 
@@ -67,7 +67,7 @@ function(
   widget : types.lua_widget
 )
 ```
-A function to call when the value field changes (character entered or value selected)
+A function to call when the value field changes \(character entered or value selected\)
 
 * **widget** - _[types.lua_widget](../types/lua_widget)_ - The widget that triggered the callback
 

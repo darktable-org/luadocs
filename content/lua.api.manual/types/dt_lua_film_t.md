@@ -48,7 +48,7 @@ Attributes:
 # dt_lua_film_t.delete
 ```
 self:function(
-[force : boolean]
+  [force : boolean]
 )
 ```
 

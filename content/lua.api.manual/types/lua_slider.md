@@ -15,13 +15,13 @@ Attributes:
 * [has_tostring](../attributes#has_tostring)
 * [parent](../attributes#parent) : [types.lua_widget](../types/lua_widget)
 
-2.63.1. types.lua_slider.\_\_call
+# lua_slider.\_\_call
 see [types.lua_widget.As a function](../types/lua_widget#lua_widgetas-a-function)
 
-2.63.2. types.lua_slider.extra registration parameters
+# lua_slider.extra registration parameters
 This widget has no extra registration parameters
 
-2.63.3. types.lua_slider.soft_min
+# lua_slider.soft_min
 
 `number`
 
@@ -31,7 +31,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-2.63.4. types.lua_slider.soft_max
+# lua_slider.soft_max
 
 `number`
 
@@ -42,7 +42,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-2.63.5. types.lua_slider.hard_min
+# lua_slider.hard_min
 
 `number`
 
@@ -53,7 +53,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-2.63.6. types.lua_slider.hard_max
+# lua_slider.hard_max
 
 `number`
 
@@ -64,7 +64,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-2.63.7. types.lua_slider.step
+# lua_slider.step
 
 `number`
 
@@ -74,7 +74,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-2.63.8. types.lua_slider.digits
+# lua_slider.digits
 
 `integer`
 
@@ -84,7 +84,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-2.63.9. types.lua_slider.value
+# lua_slider.value
 
 `number`
 
@@ -94,7 +94,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-2.63.10. types.lua_slider.label
+# lua_slider.label
 
 `string`
 

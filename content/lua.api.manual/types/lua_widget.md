@@ -46,9 +46,9 @@ function(
 )
 ```
 
-A function to call when the widget needs to reset itself
+A function to call when the widget needs to reset itself.
 Note that some widgets have a default implementation that can be overridden, \(containers in particular will recursively reset their children\). If you replace that default implementation you need to reimplement that functionality or call the original function within your
-callback
+callback.
 
 Attributes:
 

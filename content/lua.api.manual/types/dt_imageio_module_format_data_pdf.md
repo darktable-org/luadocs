@@ -58,7 +58,17 @@ Attributes:
 
 `string`
 
-The title for the document types.dt_imageio_module_format_data_pdf.rotate:set_text([[Should the images be rotated to match the PDF orientation
+The title for the document 
+
+Attributes:
+
+* [write](../attributes#write)
+
+# dt_imageio_module_format_data_pdf.rotate
+
+`boolean`
+
+Should the images be rotated to match the PDF orientation
 
 Attributes:
 

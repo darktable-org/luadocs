@@ -8,8 +8,8 @@ author: "people"
 
 `event`
 
-This event is triggered when an film import is finished (all post-import-image callbacks
-have already been triggered). This event can be registered multiple times.
+This event is triggered when an film import is finished \(all post-import-image callbacks
+have already been triggered\). This event can be registered multiple times.
 
 # post-import-film.callback
 

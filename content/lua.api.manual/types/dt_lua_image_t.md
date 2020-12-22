@@ -283,8 +283,8 @@ Attributes:
 `boolean`
 
 True if the image is a RAW file.
-WARNING: This is a flag that gets set the first time the image is opened, either by an edit
-or thumbnail generation. If images are imported using darktable.database.import(), then
+**WARNING:** This is a flag that gets set the first time the image is opened, either by an edit
+or thumbnail generation. If images are imported using darktable.database.import\(\), then
 dt_lua_image_t.is_raw is not guaranteed to be correct.
 
 # dt_lua_image_t.is_ldr
@@ -325,7 +325,7 @@ The height of the image.
 
 `number`
 
-The rating of the image (-1 for rejected).
+The rating of the image \(-1 for rejected\).
 
 Attributes:
 
@@ -427,7 +427,7 @@ self:function(
 )
 ```
 drops the cached version of this image.
-This function should be called if an image is modified out of darktable to force DT to regenerate the thumbnail
-darktable will regenerate the thumbnail by itself when it is needed
+This function should be called if an image is modified out of darktable to force darktable to regenerate the thumbnail.
+darktable will regenerate the thumbnail by itself when it is needed.
 
 * **self** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image whose cache must be dropped.
