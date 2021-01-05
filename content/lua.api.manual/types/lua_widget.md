@@ -18,6 +18,18 @@ Attributes:
 
 This widget has no extra registration parameters
 
+# lua_widget.name
+
+**Lua API 6.2.0**
+
+`string or nil`
+
+Name assigned to the widget for CSS styling purposes.
+
+Attributes:
+
+* [write](../Attributes#write)
+
 # lua_widget.sensitive
 
 `boolean`
