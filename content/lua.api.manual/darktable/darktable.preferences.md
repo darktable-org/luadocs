@@ -9,7 +9,7 @@ author: "people"
 `table`
 
 Lua allows you to manipulate preferences. Lua has its own namespace for preferences and
-you can't access nor write normal darktable preferences.
+you can't write normal darktable preferences.
 Preference handling functions take a _script_ parameter. This is a string used to avoid
 name collision in preferences \(i.e namespace\). Set it to something unique, usually the
 name of the script handling the preference.
@@ -79,7 +79,7 @@ function(
 
 Reads a value from a Lua preference.
 
-* **script** - _string_ - Invisible prefix to guarantee unicity of preferences.
+* **script** - _string_ - Invisible prefix to guarantee unicity of preferences. **Lua API 6.2.0** Specifying "darktable" as the script name allows access to the darktable core preferences.
 * **name** - _string_ - The name of the preference displayed in the preference screen.
 * **type** - _[types.lua_pref_type](../../types/lua_pref_type)_ - The type of the preference.
 * **return** - _depends on type_ - The value of the preference.
@@ -101,3 +101,35 @@ Writes a value to a Lua preference.
 * **name** - _string_ - The name of the preference displayed in the preference screen.
 * **type** - _[types.lua_pref_type](../../types/lua_pref_type)_ - The type of the preference.
 * **value** - _depends on type_ - The value to set the preference to.
+
+**Lua API 6.2.0**
+
+# darktable.preferences.destroy
+
+```
+function(
+  script : string,
+  name : string,
+) : return boolean
+```
+
+Destroys a lua preference key and value.
+
+* **script** - _string_ - Invisible prefix to guarantee unicity of preferences.
+* **name** - _string_ - The name of the preference displayed in the preference screen.
+* **return** - _boolean_ - True for success, false otherwise.
+
+**Lua API 6.2.0**
+
+# darktable.preferences.get_keys
+
+```
+function(
+  script : string,
+  name : string,
+) : return table of strings
+```
+
+Get all of the darktable core and lua preference keys and return them in a sorted table.
+
+* **return** - _table of string_ - Sorted darktable core preference and lua preference keys.
