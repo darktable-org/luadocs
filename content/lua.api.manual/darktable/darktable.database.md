@@ -46,6 +46,21 @@ path was given as a parameter\). NOTE 2: If the parameter is a directory the cal
 * **return** - _[types.dt_lua_image_t](../../types/dt_lua_image_t)_ - The created image if an image is imported or the toplevel film object if a film was
 imported.
 
+# darktable.database.get_image
+
+**Lua API 6.2.0**
+
+```
+function(
+  image_id : int,
+) : types.dt_lua_image_t
+```
+
+Get an image, specified by image_id, from the database.
+
+* **image_id** - _int_ - The id number of the image to get
+* **return** - _[types.dt_lua_image_t](../../types/dt_lua_image_t)_ - The image object if found, otherwise nil
+
 # darktable.database.move_image
 
 ```
