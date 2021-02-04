@@ -1,7 +1,7 @@
 ---
 title: darktable.gettext
 id: darktable.gettext
-weight: 200
+weight: 80
 draft: false
 author: "people"
 ---

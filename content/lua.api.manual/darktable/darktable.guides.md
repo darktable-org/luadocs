@@ -1,7 +1,7 @@
 ---
 title: darktable.guides
 id: darktable.guides
-weight: 120
+weight: 100
 draft: false
 author: "people"
 ---

@@ -1,7 +1,7 @@
 ---
 title: darktable.styles
 id: darktable.styles
-weight: 160
+weight: 220
 draft: false
 author: "people"
 ---

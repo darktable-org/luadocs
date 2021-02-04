@@ -1,7 +1,7 @@
 ---
 title: darktable.new_format
 id: darktable.new_format
-weight: 80
+weight: 110
 draft: false
 author: "people"
 ---

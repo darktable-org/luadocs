@@ -1,7 +1,7 @@
 ---
 title: darktable.debug
 id: darktable.debug
-weight: 210
+weight: 60
 draft: false
 author: "people"
 ---

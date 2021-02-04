@@ -1,7 +1,7 @@
 ---
 title: darktable.control
 id: darktable.control
-weight: 190
+weight: 40
 draft: false
 author: "people"
 ---

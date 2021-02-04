@@ -1,7 +1,7 @@
 ---
 title: darktable.print_log
 id: darktable.print_log
-weight: 30
+weight: 180
 draft: false
 author: "people"
 ---

@@ -1,7 +1,7 @@
 ---
 title: darktable.collection
 id: darktable.collection
-weight: 180
+weight: 20
 draft: false
 author: "people"
 ---

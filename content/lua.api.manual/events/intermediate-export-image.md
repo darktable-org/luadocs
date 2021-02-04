@@ -1,7 +1,7 @@
 ---
 title: intermediate-export-image
 id: intermediate-export-image
-weight: 20
+weight: 50
 draft: false
 author: "people"
 ---

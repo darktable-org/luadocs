@@ -1,7 +1,7 @@
 ---
 title: post-import-image
 id: post-import-image
-weight: 30
+weight: 80
 draft: false
 author: "people"
 ---

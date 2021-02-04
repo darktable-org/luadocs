@@ -1,7 +1,7 @@
 ---
 title: darktable.database
 id: darktable.database
-weight: 180
+weight: 50
 draft: false
 author: "people"
 ---

@@ -1,7 +1,7 @@
 ---
 title: exit
 id: exit
-weight: 100
+weight: 20
 draft: false
 author: "people"
 ---

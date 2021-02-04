@@ -1,7 +1,7 @@
 ---
 title: global_toolbox-overlay_toggle
 id: global_toolbox-overlay_toggle
-weight: 80
+weight: 40
 draft: false
 author: "people"
 ---

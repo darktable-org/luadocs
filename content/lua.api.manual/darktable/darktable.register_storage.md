@@ -1,7 +1,7 @@
 ---
 title: darktable.register_storage
 id: darktable.register_storage
-weight: 50
+weight: 210
 draft: false
 author: "people"
 ---

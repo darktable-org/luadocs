@@ -1,7 +1,7 @@
 ---
 title: shortcut
 id: shortcut
-weight: 40
+weight: 110
 draft: false
 author: "people"
 ---

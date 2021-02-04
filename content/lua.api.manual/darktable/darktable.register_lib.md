@@ -1,7 +1,7 @@
 ---
 title: darktable.register_lib
 id: darktable.register_lib
-weight: 60
+weight: 200
 draft: false
 author: "people"
 ---

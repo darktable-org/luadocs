@@ -1,7 +1,7 @@
 ---
 title: darktable.password
 id: darktable.password
-weight: 155
+weight: 140
 draft: false
 author: "people"
 ---

@@ -1,7 +1,7 @@
 ---
 title: global_toolbox-grouping_toggle
 id: global_toolbox-grouping_toggle
-weight: 70
+weight: 30
 draft: false
 author: "people"
 ---

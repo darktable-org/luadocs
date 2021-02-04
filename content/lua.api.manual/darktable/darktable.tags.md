@@ -1,7 +1,7 @@
 ---
 title: darktable.tags
 id: darktable.tags
-weight: 130
+weight: 230
 draft: false
 author: "people"
 ---

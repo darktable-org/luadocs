@@ -1,7 +1,7 @@
 ---
 title: darktable.new_widget
 id: darktable.new_widget
-weight: 100
+weight: 130
 draft: false
 author: "people"
 ---
