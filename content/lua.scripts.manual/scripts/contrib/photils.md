@@ -33,6 +33,9 @@ photils.lua - auto tag images based on feature recognition
 
 ## Limitations
 
+## Website
+
+[photils](https://github.com/scheckmedia/photils-dt)
 
 ## Author
 
