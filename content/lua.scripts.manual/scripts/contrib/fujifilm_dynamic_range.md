@@ -8,7 +8,7 @@ author: "people"
 
 ## Name
 
-fujifilm_dynamic_range.lua - 
+fujifilm_dynamic_range.lua - adjust darktable exposure by Fujifilm raw exposure bias
 
 ## Description
 
