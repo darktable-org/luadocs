@@ -14,7 +14,7 @@ Allows access to all existing tags.
 
 Each existing tag has a numeric entry in the tags table - use ipairs to iterate over them.
 
-### darktable.tags.create
+# darktable.tags.create
 
 ```
 function(
