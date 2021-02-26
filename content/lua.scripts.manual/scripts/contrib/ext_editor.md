@@ -13,9 +13,10 @@ ext_editor.lua - edit images with external editors
 ## Description
 
 This script provides helpers to edit image files with programs external to darktable. It adds:
-- a new target storage "collection". Image exported will be reimported to collection for further edit with external programs
+- a new target storage "collection". Image exported will be reimported to collection for further editing with external programs
 - a new lighttable module "external editors", to select a program from a list of up to
-- 9 external editors and run it on a selected image (adjust this limit by changing MAX_EDITORS)
+9 external editors and run it on a selected image (adjust this limit by changing MAX_EDITORS)
+- an option to display the module in darkroom view
 - a set of lua preferences in order to configure name and path of up to 9 external editors
 - a set of lua shortcuts in order to quick launch the external editors
 
@@ -37,8 +38,9 @@ This script provides helpers to edit image files with programs external to darkt
 * press "export"
 * the exported image will be imported into collection and grouped with the original image
       
-* select an image for editing with en external program, and:
-* in lighttable/external editors, select program and press "edit"
+* in lighttable, select an image for editing with en external program 
+(or in darkroom for the image being edited):
+* in external editors GUI, select program and press "edit"
 * edit the image with the external editor, overwite the file, quit the external program
 * the selected image will be updated
   or
