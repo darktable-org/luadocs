@@ -14,7 +14,7 @@ function(
 ) : types.dt_lua_backgroundjob_t
 ```
 
-Create a new progress_bar displayed in [darktable.gui.libs.backgroundjobs](#darktable.gui.libs.backgroundjobs)
+Create a new progress_bar displayed in [darktable.gui.libs.backgroundjobs](../libs/backgroundjobs.md)
 
 * **text** - _string_ - The text to display in the job entry
 * **\[percentage\]** - _boolean_ - Should a progress bar be displayed
@@ -29,6 +29,6 @@ function(
 )
 ```
 
-* **job** - _[types.dt_lua_backgroundjob_t](../../types/dt_lua_backgroundjob_t)_ - The job who is being cancelled
+* **job** - _[types.dt_lua_backgroundjob_t](../../types/dt_lua_backgroundjob_t)_ - The job that is being cancelled
 
 
