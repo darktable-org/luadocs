@@ -19,7 +19,7 @@ test a file to see what it is
 local df = require "lib/dtutils.file"
 local result = df.test_file(path, test)
 ```
-**path** - _string_ - path and filename
+**path** - _string_ - path and filename 
 **test** - _char_ - one of d, e, f, x where
 * d - directory
 * e - exists
