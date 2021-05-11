@@ -50,6 +50,18 @@ Attributes:
 
 * [write](../Attributes#write)
 
+# lua_widget.visible
+
+**Lua API 7.0.0**
+
+`boolean or nil`
+
+Hide or show widget.  Default is show.
+
+Attributes:
+
+* [write](../Attributes#write)
+
 # lua_widget.reset_callback
 
 ```
