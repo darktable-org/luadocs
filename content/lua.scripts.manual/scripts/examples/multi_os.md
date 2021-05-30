@@ -1,6 +1,6 @@
 ---
-title: name
-id: name
+title: multi_os
+id: multi_os
 weight: 70
 draft: false
 author: "people"
