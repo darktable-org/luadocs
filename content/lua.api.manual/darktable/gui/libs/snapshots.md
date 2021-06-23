@@ -19,7 +19,7 @@ number - The place in the screen where the line separating the snapshot is. Betw
 Attributes:
 * [write](../../../Attributes#write)
 
-darktable.gui.libs.snapshots.direction
+## darktable.gui.libs.snapshots.direction
 
 [types.snapshot_direction_t](../../../types/snapshot_direction_t) - The direction of the snapshot overlay
 
@@ -28,11 +28,11 @@ Attributes:
 
 ## darktable.gui.libs.snapshots.#
 
-[types.snapshot_direction_t](../../../types/snapshot_direction_t) - The different snapshots for the image
+[types.dt_lua_snapshot_t](../../../types/dt_lua_snapshot_t) - Each snapshot appears with a numerical index; you can iterate over them with ipairs.
 
 ## darktable.gui.libs.snapshots.selected
 
-[types.snapshot_direction_t](../../../types/snapshot_direction_t) - The currently selected snapshot
+[types.dt_lua_snapshot_t](../../../types/dt_lua_snapshot_t) - The currently selected snapshot
 
 ## darktable.gui.libs.snapshots.take_snapshot
 
@@ -46,5 +46,5 @@ The snapshot file will be generated at the next redraw of the main window
 
 ## darktable.gui.libs.snapshots.max_snapshot
 
-number - The maximum number of snapshots
+[types.dt_lua_snapshot_t](../../../types/dt_lua_snapshot_t) - The maximum number of snapshots
 

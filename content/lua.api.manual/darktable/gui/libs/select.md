@@ -25,7 +25,7 @@ function(
 
 Add a new button and call a callback when it is clicked
 
-* **name** - _string_ - The name to use to refer to the select button **API 6.2.2**
+* **name** - _string_ - The name to use to refer to the select button
 * **label** - _string_ - The label to display on the button
 * **callback** - _function_ - The function to call when the button is pressed
 * **\[tooltip\]** - _string_ - The tooltip to use on the new button
@@ -45,7 +45,7 @@ The function to call when the button is pressed
 * **images** - _table of [types.dt_lua_image_t](../../../types/dt_lua_image_t)_ - The images in the current collection. This is the same content asdarktable.collection
 * **return** - _table of [types.dt_lua_image_t](../../../types/dt_lua_image_t)_ - The images to set the selection to
 
-## darktable.gui.libs.select.destroy_selection **API 6.2.2**
+## darktable.gui.libs.select.destroy_selection
 
 ```
 function(
@@ -57,7 +57,7 @@ Remove a button created by darktable.gui.libs.select.register_selection.
 
 * **name** - _string_ - The name of the selection button to destroy
 
-## darktable.gui.libs.select.selection_set_sensitive **API 6.2.2**
+## darktable.gui.libs.select.selection_set_sensitive
 
 ```
 function(

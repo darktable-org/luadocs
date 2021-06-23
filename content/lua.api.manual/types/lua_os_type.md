@@ -1,7 +1,7 @@
 ---
 title: lua_os_type
 id: lua_os_type
-weight: 20
+weight: 570
 draft: false
 author: "people"
 ---

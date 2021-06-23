@@ -1,7 +1,7 @@
 ---
 title: dt_ui_panel_t
 id: dt_ui_panel_t
-weight: 510
+weight: 470
 draft: false
 author: "people"
 ---

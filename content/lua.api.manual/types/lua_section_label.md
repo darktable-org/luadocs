@@ -1,7 +1,7 @@
 ---
 title: lua_section_label
 id: lua_section_label
-weight: 660
+weight: 590
 draft: false
 author: "people"
 ---

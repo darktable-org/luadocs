@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_module_storage_data_latex
 id: dt_imageio_module_storage_data_latex
-weight: 200
+weight: 260
 draft: false
 author: "people"
 ---

@@ -1,7 +1,7 @@
 ---
 title: dt_lighttable_layout_t
 id: dt_lighttable_layout_t
-weight: 520
+weight: 310
 draft: false
 author: "people"
 ---

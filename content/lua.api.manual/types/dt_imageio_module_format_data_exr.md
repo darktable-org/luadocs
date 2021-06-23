@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_module_format_data_exr
 id: dt_imageio_module_format_data_exr
-weight: 70
+weight: 130
 draft: false
 author: "people"
 ---

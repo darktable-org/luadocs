@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_exr_compression_t
 id: dt_imageio_exr_compression_t
-weight: 390
+weight: 90
 draft: false
 author: "people"
 ---

@@ -1,7 +1,7 @@
 ---
 title: lua_widget
 id: lua_widget
-weight: 530
+weight: 640
 draft: false
 author: "people"
 ---
@@ -19,8 +19,6 @@ Attributes:
 This widget has no extra registration parameters
 
 # lua_widget.name
-
-**Lua API 6.2.0**
 
 `string or nil`
 
@@ -51,8 +49,6 @@ Attributes:
 * [write](../Attributes#write)
 
 # lua_widget.visible
-
-**Lua API 7.0.0**
 
 `boolean or nil`
 

@@ -48,8 +48,6 @@ imported.
 
 # darktable.database.get_image
 
-**Lua API 6.2.0**
-
 ```
 function(
   image_id : int,

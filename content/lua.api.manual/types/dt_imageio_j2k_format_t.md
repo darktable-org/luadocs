@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_j2k_format_t
 id: dt_imageio_j2k_format_t
-weight: 350
+weight: 100
 draft: false
 author: "people"
 ---

@@ -1,7 +1,7 @@
 ---
 title: comp_type_t
 id: comp_type_t
-weight: 370
+weight: 30
 draft: false
 author: "people"
 ---

@@ -1,7 +1,7 @@
 ---
 title: dt_lib_collect_mode_t
 id: dt_lib_collect_mode_t
-weight: 410
+weight: 290
 draft: false
 author: "people"
 ---

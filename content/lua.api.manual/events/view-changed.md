@@ -1,7 +1,7 @@
 ---
 title: view_changed
 id: view_changed
-weight: 60
+weight: 120
 draft: false
 author: "people"
 ---

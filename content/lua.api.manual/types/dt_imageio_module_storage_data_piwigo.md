@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_module_storage_data_piwigo
 id: dt_imageio_module_storage_data_piwigo
-weight: 210
+weight: 270
 draft: false
 author: "people"
 ---

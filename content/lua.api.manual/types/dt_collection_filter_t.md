@@ -1,7 +1,7 @@
 ---
 title: dt_collection_filter_t
 id: dt_collection_filter_t
-weight: 450
+weight: 40
 draft: false
 author: "people"
 ---

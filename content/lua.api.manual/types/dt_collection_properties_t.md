@@ -1,7 +1,7 @@
 ---
 title: dt_collection_properties_t
 id: dt_collection_properties_t
-weight: 420
+weight: 50
 draft: false
 author: "people"
 ---

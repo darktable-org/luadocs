@@ -1,7 +1,7 @@
 ---
 title: lua_pref_type
 id: lua_pref_type
-weight: 380
+weight: 580
 draft: false
 author: "people"
 ---

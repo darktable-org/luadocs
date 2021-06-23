@@ -1,7 +1,7 @@
 ---
 title: dt_lib_collect_params_rule_t
 id: dt_lib_collect_params_rule_t
-weight: 400
+weight: 300
 draft: false
 author: "people"
 ---

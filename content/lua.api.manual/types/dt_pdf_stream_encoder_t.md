@@ -1,7 +1,7 @@
 ---
 title: dt_pdf_stream_encoder_t
 id: dt_pdf_stream_encoder_t
-weight: 170
+weight: 430
 draft: false
 author: "people"
 ---

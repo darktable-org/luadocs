@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_module_format_data_jpeg
 id: dt_imageio_module_format_data_jpeg
-weight: 100
+weight: 150
 draft: false
 author: "people"
 ---

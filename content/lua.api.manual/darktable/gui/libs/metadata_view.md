@@ -39,8 +39,6 @@ function(
 
 ## darktable.gui.libs.metadata_view.destroy_info
 
-**lua API 6.2.0**
-
 ```
 function(
   name : string

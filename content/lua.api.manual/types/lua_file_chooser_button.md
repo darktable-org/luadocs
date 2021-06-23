@@ -1,7 +1,7 @@
 ---
 title: lua_file_chooser_button
 id: lua_file_chooser_button
-weight: 620
+weight: 550
 draft: false
 author: "people"
 ---

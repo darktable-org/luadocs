@@ -1,7 +1,7 @@
 ---
 title: dt_collection_sort_t
 id: dt_collection_sort_t
-weight: 430
+weight: 80
 draft: false
 author: "people"
 ---

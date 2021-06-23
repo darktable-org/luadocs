@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_module_format_t
 id: dt_imageio_module_format_t
-weight: 40
+weight: 220
 draft: false
 author: "people"
 ---

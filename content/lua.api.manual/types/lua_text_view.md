@@ -1,7 +1,7 @@
 ---
 title: lua_text_view
 id: lua_text_view
-weight: 650
+weight: 630
 draft: false
 author: "people"
 ---

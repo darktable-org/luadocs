@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_module_storage_data_gallery
 id: dt_imageio_module_storage_data_gallery
-weight: 220
+weight: 250
 draft: false
 author: "people"
 ---

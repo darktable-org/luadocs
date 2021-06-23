@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_module_format_data_ppm
 id: dt_imageio_module_format_data_ppm
-weight: 110
+weight: 190
 draft: false
 author: "people"
 ---

@@ -6,8 +6,6 @@ draft: false
 author: "people"
 ---
 
-**API 6.2.1**
-
 `event`
 
 This event is triggered whenever the selection of images changes

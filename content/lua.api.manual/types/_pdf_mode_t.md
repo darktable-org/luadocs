@@ -1,7 +1,7 @@
 ---
 title: _pdf_mode_t
 id: _pdf_mode_t
-weight: 150
+weight: 10
 draft: false
 author: "people"
 ---

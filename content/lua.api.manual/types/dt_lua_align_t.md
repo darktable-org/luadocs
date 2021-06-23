@@ -1,7 +1,7 @@
 ---
 title: dt_lua_align_t
 id: dt_lua_align_t
-weight: 480
+weight: 320
 draft: false
 author: "people"
 ---

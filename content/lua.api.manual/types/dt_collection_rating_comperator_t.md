@@ -1,7 +1,7 @@
 ---
 title: dt_collection_rating_comperator_t
 id: dt_collection_rating_comperator_t
-weight: 460
+weight: 60
 draft: false
 author: "people"
 ---

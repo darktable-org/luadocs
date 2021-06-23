@@ -6,8 +6,6 @@ draft: false
 author: "people"
 ---
 
-## Lua API 6.2.0
-
 Store and retrieve credentials using the darktable password storage backend.
 
 # darktable.password.save

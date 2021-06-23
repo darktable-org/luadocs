@@ -1,7 +1,7 @@
 ---
 title: lua_check_button
 id: lua_check_button
-weight: 550
+weight: 510
 draft: false
 author: "people"
 ---

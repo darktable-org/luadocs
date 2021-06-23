@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_module_storage_t
 id: dt_imageio_module_storage_t
-weight: 180
+weight: 280
 draft: false
 author: "people"
 ---

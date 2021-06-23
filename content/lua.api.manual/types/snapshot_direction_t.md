@@ -1,7 +1,7 @@
 ---
 title: snapshot_direction_t
 id: snapshot_direction_t
-weight: 340
+weight: 650
 draft: false
 author: "people"
 ---

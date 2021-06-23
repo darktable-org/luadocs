@@ -1,7 +1,7 @@
 ---
 title: dt_imageio_module_format_data_tiff
 id: dt_imageio_module_format_data_tiff
-weight: 60
+weight: 200
 draft: false
 author: "people"
 ---

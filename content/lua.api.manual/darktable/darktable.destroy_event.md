@@ -6,8 +6,6 @@ draft: false
 author: "people"
 ---
 
-**API 6.2.1**
-
 ```
 function(
   event_name : string,

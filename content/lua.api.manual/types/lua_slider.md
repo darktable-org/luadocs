@@ -1,7 +1,7 @@
 ---
 title: lua_slider
 id: lua_slider
-weight: 640
+weight: 610
 draft: false
 author: "people"
 ---
