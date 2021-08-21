@@ -299,6 +299,12 @@ True if the image is a ldr image.
 
 True if the image is a hdr image.
 
+# dt_lua_image_t.is_altered
+
+`boolean`
+
+True if the image has been edited.
+
 # dt_lua_image_t.has_txt
 
 `boolean`
