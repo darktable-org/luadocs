@@ -44,6 +44,15 @@ function(
 Take a snapshot of the current image and add it to the UI
 The snapshot file will be generated at the next redraw of the main window
 
+## darktable.gui.libs.snapshots.clear_snapshots
+
+```
+function(
+)
+```
+
+Delete all snapshots and remove them from the UI.
+
 ## darktable.gui.libs.snapshots.max_snapshot
 
 [types.dt_lua_snapshot_t](../../../types/dt_lua_snapshot_t) - The maximum number of snapshots
