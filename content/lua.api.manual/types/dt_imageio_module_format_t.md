@@ -44,7 +44,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-2.3.6. dt_imageio_module_format_t.max_height
+# dt_imageio_module_format_t.max_height
 
 `number`
 
@@ -54,7 +54,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-2.3.7. dt_imageio_module_format_t.write_image
+# dt_imageio_module_format_t.write_image
 ```
 self:function(
   image : types.dt_lua_image_t,
