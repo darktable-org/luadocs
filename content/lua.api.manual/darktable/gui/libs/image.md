@@ -48,11 +48,25 @@ The function to call when the button is pressed
 
 ```
 function(
-  name : string,
+  name : string
 )
 ```
 
 Destroy an action created with register_action
 
 * **name** - _string_ - The name of the action to destroy
+
+## darktable.gui.libs.image.action_set_sensitive
+
+```
+function(
+  name : string,
+  sensitive : boolean
+)
+```
+
+Set the sensitivity of a button created by darktable.gui.libs.image.register_action
+
+* **name** - _string_ - The name of the action to destroy
+* **sensitive** - _boolean_ - True to set the button sensitive, false to set it insensitive
 
