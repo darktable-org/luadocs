@@ -30,3 +30,6 @@ rename-tags.lua - rename tags
   Sebastian Witt - se.witt@gmx.net  
   Bill Ferguson - wpferguson@gmail.com
 
+## Deprecation
+
+This functionality now exists in core darktable so this script will be removed when darktable 4.0 is released.
