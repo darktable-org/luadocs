@@ -442,14 +442,14 @@ darktable will regenerate the thumbnail by itself when it is needed.
 ```
 self.function(
   check_dirs : boolean 
-  start_size : integer
-  end_size : integer
+  min_size : integer
+  max_size : integer
 )
 ```
 * **self** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image whose cache is to be generated.
 * **check_dirs** - _boolean_ - check if the mipmap cache directories exist.  Create them if necessary.
-* **start_size** - _integer_ - mipmap size to generate first
-* **end_size** - _integer_ - mipmap size to generate last
+* **min_size** - _integer_ - minimum mipmap size to generate
+* **max_size** - _integer_ - maximum mipmap size to generate
 
 **NOTES:**
 * mipmap cache image sizes
@@ -464,6 +464,5 @@ self.function(
   - 8 - full resolution
 
 * To generate a single size mipmap image set start_size and end_size to the same value
-* When generating multiple sizes put the largest size as the start size and the smallest as the end.
-* When different start and end sizes are specified, every size mipmap from start to end is generated.
+* When different min_size and max_size sizes are specified, every size mipmap from min_size to max_size is generated.
 * When looping over a set of images and generating just one size, check for directories on the first image only.
