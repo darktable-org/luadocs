@@ -29,6 +29,18 @@ see [darktable.tags.detach](../../darktable/darktable.tags#darktabletagsdetach)
 
 The name of the tag.
 
+# dt_lua_tag_t.flags
+
+`integer`
+
+The flags of the tag.
+
+# dt_lua_tag_t.synonyms
+
+`string`
+
+The synonyms of the tag.
+
 # dt_lua_tag_t.#
 
 [types.dt_lua_image_t](../types/dt_lua_image_t)
