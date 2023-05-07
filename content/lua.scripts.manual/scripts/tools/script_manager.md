@@ -51,7 +51,7 @@ and _tools_ containing tools for managing the lua scripts.
 
 ## Additional Software Required
 
-git - wwww.git.org - git is used to install and update the scripts.  script_manager will still run if git is not installed or accessible, but installing and updating scripts will not be possible.
+git - [git-scm.com](https://git-scm.com/) - git is used to install and update the scripts.  script_manager will still run if git is not installed or accessible, but installing and updating scripts will not be possible.
 
 
 ## Limitations
