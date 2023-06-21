@@ -222,7 +222,7 @@ Attributes:
 
 `string`
 
-The date and time of the image.
+The date and time of the image.  Milliseconds are shown if the preference *show image time with milliseconds* is enabled.
 
 Attributes:
 
@@ -326,6 +326,30 @@ The width of the image.
 `number`
 
 The height of the image.
+
+# dt_lua_image_t.final_width
+
+`number`
+
+The final width of the image
+
+# dt_lua_image_t.final_height
+
+`number`
+
+The final height of the image
+
+# dt_lua_image_t.p_width
+
+`number`
+
+The raw width of the image
+
+# dt_lua_image_t.p_height
+
+`number`
+
+The raw height of the image
 
 # dt_lua_image_t.rating
 
