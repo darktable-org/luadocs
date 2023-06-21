@@ -29,6 +29,20 @@ see [darktable.tags.detach](../../darktable/darktable.tags#darktabletagsdetach)
 
 The name of the tag.
 
+# dt_lua_tag_t.flags
+
+`integer`
+
+* 1 - tag is a category
+* 2 - tag is private
+* 4 - tag has an images order
+
+# dt_lua_tag_t.synonyms
+
+`string`
+
+The synonyms of the tag.
+
 # dt_lua_tag_t.#
 
 [types.dt_lua_image_t](../types/dt_lua_image_t)
