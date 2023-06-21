@@ -22,4 +22,4 @@ Open a terminal and start darktable with the command `/Applications/darktable.ap
 
 ### Windows
 
-Open a command prompt. Start darktable with the command "C:\Program Files\darktable\bin\darktable" -d lua > log.txt. This provides debugging information to give you insight into what is happening.
+Open a command prompt. Start darktable with the command `"C:\Program Files\darktable\bin\darktable" -d lua > log.txt 2>&1`. This provides debugging information to give you insight into what is happening.
