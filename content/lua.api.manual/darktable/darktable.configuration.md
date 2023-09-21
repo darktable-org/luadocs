@@ -44,7 +44,7 @@ The name of the directory where darktable will find its global configuration obj
 
 `string`
 
-The name of the directory where darktable caches objects.
+The name of the directory where darktable stores temporary objects for later reuse.
 
 # darktable.configuration.api_version_major
 
