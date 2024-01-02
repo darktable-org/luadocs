@@ -383,6 +383,12 @@ see [types.dt_lua_image_t.red](../types/dt_lua_image_t#dt_lua_image_tred)
 # dt_lua_image_t.purple
 see [types.dt_lua_image_t.red](../types/dt_lua_image_t#dt_lua_image_tred)
 
+# dt_lua_image_t.changed_timestamp
+
+`string`
+
+The date and time the image was last edited.
+
 # dt_lua_image_t.reset
 ```
   self:function(
