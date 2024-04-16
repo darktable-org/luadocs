@@ -383,7 +383,7 @@ see [types.dt_lua_image_t.red](../types/dt_lua_image_t#dt_lua_image_tred)
 # dt_lua_image_t.purple
 see [types.dt_lua_image_t.red](../types/dt_lua_image_t#dt_lua_image_tred)
 
-# dt_lua_image_t.changed_timestamp
+# dt_lua_image_t.change_timestamp
 
 `string`
 
