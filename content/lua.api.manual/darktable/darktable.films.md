@@ -32,5 +32,5 @@ to a film
 
 # darktable.films.delete
 
-see [types.dt_lua_film_t.delete](../../types/dt_lua_film_t.delete)
+see [types.dt_lua_film_t](../../types/dt_lua_film_t)
 
