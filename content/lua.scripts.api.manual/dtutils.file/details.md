@@ -29,77 +29,41 @@ constructing darktable lua scripts
 
 ## FUNCTIONS
 
-### [check_if_bin_exists](check_if_bin_exists.md)
+* [check_if_bin_exists](check_if_bin_exists.md) - check if an executable exists
 
-check if an executable exists
+* [check_if_file_exists](check_if_file_exists.md) - check if a file or path exist
 
-### [check_if_file_exists](check_if_file_exists.md)
+* [chop_filetype](chop_filetype.md) - remove a filetype from a filename
 
-check if a file or path exist
+* [create_unique_filename](create_unique_filename.md) - create a unique filename from the supplied argment
 
-### [chop_filetype](chop_filetype.md)
+* [executable_path_widget](executable_path_widget.md) - create a widget to get executable path preferences
 
-remove a filetype from a filename
+* [file_copy](file_copy.md) - copy a file to another name/location
 
-### [create_unique_filename](create_unique_filename.md)
+* [file_move](file_move.md) - move a file from one directory to another
 
-create a unique filename from the supplied argment
+* [filename_increment](filename_increment.md) - add a two digit increment to a filename
 
-### [executable_path_widget](executable_path_widget.md)
+* [get_basename](get_basename.md) - get the filename without the path or extension
 
-create a widget to get executable path preferences
+* [get_executable_path_preference](get_executable_path_preference.md) - return the path to an executable from a preference
 
-### [file_copy](file_copy.md)
+* [get_filename](get_filename.md) - get the filename and extension from a file path
 
-copy a file to another name/location
+* [get_filetype](get_filetype.md) - get the filetype from a filename
 
-### [file_move](file_move.md)
+* [get_path](get_path.md) - get the path from a file path
 
-move a file from one directory to another
+* [mkdir](mkdir.md) - create the directory(ies) if they do not already exists
 
-### [filename_increment](filename_increment.md)
+* [rmdir](rmdir.md) - recursively remove a directory
 
-add a two digit increment to a filename
+* [sanitize_filename](sanitize_filename.md) - make a filename safe to pass as an argument
 
-### [get_basename](get_basename.md)
+* [set_executable_path_preference](set_executable_path_preference.md) - set a preference for the path to an executable
 
-get the filename without the path or extension
-
-### [get_executable_path_preference](get_executable_path_preference.md)
-
-return the path to an executable from a preference
-
-### [get_filename](get_filename.md)
-
-get the filename and extension from a file path
-
-### [get_filetype](get_filetype.md)
-
-get the filetype from a filename
-
-### [get_path](get_path.md)
-
-get the path from a file path
-
-### [mkdir](mkdir.md)
-
-create the directory(ies) if they do not already exists
-
-### [rmdir](rmdir.md)
-
-recursively remove a directory
-
-### [sanitize_filename](sanitize_filename.md)
-
-make a filename safe to pass as an argument
-
-### [set_executable_path_preference](set_executable_path_preference.md)
-
-set a preference for the path to an executable
-
-### [split_filepath](split_filepath.md)
-
-split a filepath into parts
+* [split_filepath](split_filepath.md) - split a filepath into parts
 
 ## LICENSE
 
