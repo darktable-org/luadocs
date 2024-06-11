@@ -30,3 +30,34 @@ The orientation of the box.
 Attributes:
 
 * [write](../attributes#write)
+
+# lua_box.expand
+
+`gboolean`
+
+Cells expand to fill the width of the box.  Defaults to TRUE.
+
+Attributes:
+
+* [write](../attributes#write)
+
+# lua_box.fill
+
+`gboolean`
+
+Widget fills the cell.  Defaults to TRUE.
+
+Attributes:
+
+* [write](../attributes#write)
+
+# lua_box.padding
+
+`guint`
+
+Extra padding in pixels to add to the start of the widget.  Defaults to 0.
+
+Attributes:
+
+* [write](../attributes#write)
+

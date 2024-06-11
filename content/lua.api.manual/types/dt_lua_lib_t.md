@@ -28,6 +28,12 @@ The translated title of the UI element
 
 The version of the internal data of this lib
 
+# dt_lua_lib_t.active_preset
+
+`string`
+
+The name of the active preset of this lib
+
 # dt_lua_lib_t.visible
 
 `boolean`
