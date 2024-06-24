@@ -31,11 +31,41 @@ Attributes:
 
 * [write](../attributes#write)
 
+# lua_button.halign
+
+[types.dt_lua_align_t](../types/dt_lua_align_t)
+
+The horizontal alignment of the button label
+
+Attributes:
+
+* [write](../attributes#write)
+
 # lua_button.ellipsize
 
 [types.dt_lua_ellipsize_mode_t](../types/dt_lua_ellipsize_mode_t)
 
 The ellipsize mode of the button label
+
+Attributes:
+
+* [write](../attributes#write)
+
+# lua_button.image
+
+`image`
+
+The image displayed on the button instead of a label
+
+Attributes:
+
+* [write](../attributes#write)
+
+# lua_button.image_align
+
+[types.dt_lua_align_t](../types/dt_lua_align_t)
+
+The horizontal alignment of the button image
 
 Attributes:
 

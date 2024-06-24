@@ -30,29 +30,17 @@ lua scripts.
 
 ## FUNCTIONS
 
-### [check_min_api_version](check_min_api_version.md)
+* [check_min_api_version](check_min_api_version.md) - check the minimum required api version against the current api version
 
-check the minimum required api version against the current api version
+* [check_os](check_os.md) - check that the operating system is supported
 
-### [check_os](check_os.md)
+* [join](http://github.com/darktable-org/lua-scripts/wiki/join.md) - join a table of strings with a specified separator
 
-check that the operating system is supported
+* [prequire](http://github.com/darktable-org/lua-scripts/wiki/prequire.md) - a protected lua require
 
-### [join](http://github.com/darktable-org/lua-scripts/wiki/join.md)
+* [spairs](http://github.com/darktable-org/lua-scripts/wiki/spairs.md) - an iterator that provides sorted pairs from a table
 
-join a table of strings with a specified separator
-
-### [prequire](http://github.com/darktable-org/lua-scripts/wiki/prequire.md)
-
-a protected lua require
-
-### [spairs](http://github.com/darktable-org/lua-scripts/wiki/spairs.md)
-
-an iterator that provides sorted pairs from a table
-
-### [split](http://github.com/darktable-org/lua-scripts/wiki/split.md)
-
-split a string on a specified separator
+* [split](http://github.com/darktable-org/lua-scripts/wiki/split.md) - split a string on a specified separator
 
 ## SEE ALSO
 

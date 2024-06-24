@@ -31,17 +31,11 @@ darktable lua scripts.
 
 ## FUNCTIONS
 
-### [external_command](external_command.md)
+* [external_command](external_command.md) - pass a command to the operating system for execution and return the result
 
-pass a command to the operating system for execution and return the result
+* [launch_default_app](launch_default_app.md) - open file in default application
 
-### [launch_default_app](launch_default_app.md)
-
-open file in default application
-
-### [windows_command](windows_command.md)
-
-pass a command to the windows operating system for execution and return the result
+* [windows_command](windows_command.md) - pass a command to the windows operating system for execution and return the result
 
 ## LICENSE
 

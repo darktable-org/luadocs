@@ -30,6 +30,19 @@ Creates a duplicate of an image and returns it.
 * **image** - _[types.dt_lua_image_t](../../types/dt_lua_image_t)_ - the image to duplicate
 * **return** - _[types.dt_lua_image_t](../../types/dt_lua_image_t)_ - The new image object.
 
+# darktable.database.duplicate_image_with_history
+
+```
+function(
+  image : types.dt_lua_image_t
+) : types.dt_lua_image_t
+```
+
+Creates a duplicate of an image with all processing and returns it.
+
+* **image** - _[types.dt_lua_image_t](../../types/dt_lua_image_t)_ - the image to duplicate
+* **return** - _[types.dt_lua_image_t](../../types/dt_lua_image_t)_ - The new image object.
+
 # darktable.database.import
 
 ```

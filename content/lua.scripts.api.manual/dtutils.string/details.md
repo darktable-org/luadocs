@@ -31,29 +31,25 @@ _**ds** - library_ - the darktable lua string library
 
 ## FUNCTIONS
 
-### [escape_xml_characters](escape_xml_characters.md)
+* [escape_xml_characters](escape_xml_characters.md) - escape characters for xml documents
 
-escape characters for xml documents
+* [is_not_sanitized](is_not_sanitized.md) - check if a string has been sanitized
 
-### [is_not_sanitized](is_not_sanitized.md)
+* [sanitize](sanitize.md) - surround a string in quotes making it safe to pass as an argument
 
-check if a string has been sanitized
+* [sanitize_lua](sanitize_lua.md) - escape lua 'magic' characters from a pattern string
 
-### [sanitize](sanitize.md)
+* [strip_accents](strip_accents.md) - strip accents from characters
 
-surround a string in quotes making it safe to pass as an argument
+* [urlencode](urlencode.md) - encode a string in a websafe manner
 
-### [sanitize_lua](sanitize_lua.md)
+* [clear_substitute_list](clear_substitute_list.md) - clear the computed list of variable substitution values
 
-escape lua 'magic' characters from a pattern string
+* [build_substitute_list](build_substitute_list.md) - build a list of variable substitutions
 
-### [strip_accents](strip_accents.md)
+* [substitute_list](substitute_list.md) - replace variables in a string with their computed values
 
-strip accents from characters
-
-### [urlencode](urlencode.md)
-
-encode a string in a websafe manner
+* [substitute](substitute.md) - perform all the variable substitution steps with one function call
 
 ## LICENSE
 

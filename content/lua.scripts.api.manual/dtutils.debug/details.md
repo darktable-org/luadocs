@@ -28,21 +28,13 @@ dtutils.debug provides an interface to the darktable debugging routines.
 
 ## FUNCTIONS
 
-### [dprint](dprint.md)
+* [dprint](dprint.md) - pass a variable to darktable.debug.dump and print the results to stdout
 
-pass a variable to darktable.debug.dump and print the results to stdout
+* [new_tracepoint](new_tracepoint.md) - create a function returning a tracepoint
 
-### [new_tracepoint](new_tracepoint.md)
+* [terse_dump](terse_dump.md) - set darktable.debug.known to shorten all image dumps to a single line
 
-create a function returning a tracepoint
-
-### [terse_dump](terse_dump.md)
-
-set darktable.debug.known to shorten all image dumps to a single line
-
-### [tracepoint](tracepoint.md)
-
-print out a tracepoint and dump the arguments
+* [tracepoint](tracepoint.md) - print out a tracepoint and dump the arguments
 
 ## LICENSE
 

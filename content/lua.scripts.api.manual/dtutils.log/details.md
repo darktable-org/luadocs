@@ -30,21 +30,13 @@ scattered through out your code and only turn them on as necessary.
 
 ## FUNCTIONS
 
-### [caller](caller.md)
+* [caller](caller.md) - get the name and line number of the calling routine
 
-get the name and line number of the calling routine
+* [engine](engine.md) - get and set the output engine
 
-### [engine](engine.md)
+* [log_level](log_level.md) - get or set the log level
 
-get and set the output engine
-
-### [log_level](log_level.md)
-
-get or set the log level
-
-### [msg](msg.md)
-
-print a log message
+* [msg](msg.md) - print a log message
 
 ## EXAMPLE
 ```
@@ -54,11 +46,11 @@ log.log_level(log.warn)
 ```
 print out warning, error and success messages as code is running
 ```
-log.log_level(debug)
+log.log_level(log.debug)
 ```
 print out debugging messages too because this isnt working
 ```
-log.log_level(info)
+log.log_level(log.info)
 ```
 I want to make sure this is working ok
 ```
