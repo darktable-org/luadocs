@@ -69,7 +69,7 @@ is exported.
 * **image** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image object to export.
 * **filename** - _string_ - The filename to export to.
 * **\[allow_upscale\]** - _boolean_ - Set to true to allow upscaling of the image.
-* **return** - _boolean_ - Returns true on success.
+* **return** - _boolean_ - Returns true on success. **NOTE:** API 9.3.0 (darktable 4.8.x) returns **false** on success.
 
 Attributes:
 
