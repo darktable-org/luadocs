@@ -181,6 +181,46 @@ Attributes:
 
 * [write](../../attributes#write)
 
+# dt_lua_image_t.exif_whitebalance
+
+`string`
+
+The camera whitebalance setting used.
+
+Attributes:
+
+* [write](../../attributes#write)
+
+# dt_lua_image_t.exif_flash
+
+`string`
+
+Whether or not flash was used.
+
+Attributes:
+
+* [write](../../attributes#write)
+
+# dt_lua_image_t.exif_exposure_program
+
+`string`
+
+The camera exposure program used.
+
+Attributes:
+
+* [write](../../attributes#write)
+
+# dt_lua_image_t.exif_metering_mode
+
+`string`
+
+The camera metering mode used.
+
+Attributes:
+
+* [write](../../attributes#write)
+
 # dt_lua_image_t.exif_aperture
 
 `number`
@@ -196,6 +236,16 @@ Attributes:
 `number`
 
 The exposure time of the image.
+
+Attributes:
+
+* [write](../../attributes#write)
+
+# dt_lua_image_t.exif_exposure_bias
+
+`number`
+
+The exposure bias of the image.
 
 Attributes:
 
