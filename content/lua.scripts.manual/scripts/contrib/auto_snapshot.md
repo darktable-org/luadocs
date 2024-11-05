@@ -29,6 +29,6 @@ Open an image in darkroom.
 
 ## Author
 
-Bill Ferguson
+Bill Ferguson - wpferguson@gmail.com
 
 ## Change Log
