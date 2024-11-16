@@ -13,7 +13,7 @@ dtutils
 
 ## SYNOPSIS
 
-A Darktable lua utilities library
+A Darktable Lua utilities library
 
 ## USAGE
 ```
@@ -30,9 +30,15 @@ lua scripts.
 
 ## FUNCTIONS
 
+* [check_max_api_version](check_max_api_version.md) - check the maximum  api version supported against the current api version
+
 * [check_min_api_version](check_min_api_version.md) - check the minimum required api version against the current api version
 
 * [check_os](check_os.md) - check that the operating system is supported
+
+* [find_image_by_id](find_image_by_id.md) - look up an image in the database by ID
+
+* [gen_uuid](gen_uuid.md) - generate a UUID string
 
 * [join](http://github.com/darktable-org/lua-scripts/wiki/join.md) - join a table of strings with a specified separator
 
