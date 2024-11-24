@@ -39,7 +39,7 @@ The name of the active preset of this lib
 `boolean`
 
 Allow to make a lib module completely invisible to the user.
-Note that if the module is invisible the user will have no way to restore it without lua
+Note that if the module is invisible the user can right click in a panel and make the lib visible.
 
 Attributes:
 
@@ -80,7 +80,7 @@ A value deciding the position of the lib within its container
 
 A table of all the views that display this widget
 
-# dt_lua_lib_t.reset
+# dt_lua_lib_t:reset
 ```
 self:function(
 )

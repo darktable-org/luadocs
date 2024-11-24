@@ -20,7 +20,7 @@ Attributes:
 
 The filename of an image containing the snapshot
 
-# dt_lua_snapshot_t.select
+# dt_lua_snapshot_t:select
 ```
 self:function(
 )

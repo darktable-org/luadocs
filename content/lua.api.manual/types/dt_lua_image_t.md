@@ -17,31 +17,31 @@ Attributes:
 
 * [has_tostring](../../attributes#has_tostring)
 
-# dt_lua_image_t.attach_tag
+# dt_lua_image_t:attach_tag
 see [darktable.tags.attach](../../darktable/darktable.tags#darktabletagsattach)
 
-# dt_lua_image_t.detach_tag
+# dt_lua_image_t:detach_tag
 see [darktable.tags.detach](../../darktable/darktable.tags#darktabletagsdetach)
 
-# dt_lua_image_t.get_tags
+# dt_lua_image_t:get_tags
 see [darktable.tags.get_tags](../../darktable/darktable.tags#darktabletagsget_tags)
 
-# dt_lua_image_t.create_style
+# dt_lua_image_t:create_style
 see [darktable.styles.create](../../darktable/darktable.styles#darktablestylescreate)
 
-# dt_lua_image_t.apply_style
+# dt_lua_image_t:apply_style
 see [darktable.styles.apply](../../darktable/darktable.styles#darktablestylesapply)
 
-# dt_lua_image_t.duplicate
+# dt_lua_image_t:duplicate
 see [darktable.database.duplicate](../../darktable/darktable.database#darktabledatabaseduplicate)
 
-# dt_lua_image_t.duplicate_image_with_history
+# dt_lua_image_t:duplicate_image_with_history
 see [darktable.database.duplicate_with_history](../../darktable/darktable.database#darktabledatabaseduplicate_image_with_history)
 
-# dt_lua_image_t.move
+# dt_lua_image_t:move
 see [darktable.database.move_image](../../darktable/darktable.database#darktabledatabasemove_image)
 
-# dt_lua_image_t.copy
+# dt_lua_image_t:copy
 see [darktable.database.copy_image](../../darktable/darktable.database#darktabledatabasecopy_image)
 
 # dt_lua_image_t.id
@@ -442,7 +442,7 @@ see [types.dt_lua_image_t.red](../types/dt_lua_image_t#dt_lua_image_tred)
 
 The date and time the image was last edited.
 
-# dt_lua_image_t.reset
+# dt_lua_image_t:reset
 ```
   self:function(
 )
@@ -452,7 +452,7 @@ Removes all processing from the image, resetting it back to its original state
 
 * **self** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image whose history will be deleted
 
-# dt_lua_image_t.delete
+# dt_lua_image_t:delete
 ```
 self:function(
 )
@@ -461,7 +461,7 @@ Removes an image from the database
 
 * **self** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image to remove
 
-# dt_lua_image_t.group_with
+# dt_lua_image_t:group_with
 ```
 self:function(
   [image : types.dt_lua_image_t]
@@ -473,7 +473,7 @@ the image will be in its own group.
 * **self** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image whose group must be changed.
 * **\[image\]** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image we want to group with.
 
-# dt_lua_image_t.make_group_leader
+# dt_lua_image_t:make_group_leader
 ```
 self:function(
 )
@@ -482,7 +482,7 @@ Makes the image the leader of its group.
 
 * **self** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image we want as the leader.
 
-# dt_lua_image_t.get_group_members
+# dt_lua_image_t:get_group_members
 ```
 self:function(
 ) : table of types.dt_lua_image_t
@@ -510,7 +510,7 @@ Attributes:
 
 * [write](../../attributes#write)
 
-# dt_lua_image_t.drop_cache
+# dt_lua_image_t:drop_cache
 ```
 self:function(
 )
@@ -521,7 +521,7 @@ darktable will regenerate the thumbnail by itself when it is needed.
 
 * **self** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image whose cache must be dropped.
 
-# dt_lua_image_t.generate_cache
+# dt_lua_image_t:generate_cache
 ```
 self.function(
   check_dirs : boolean 

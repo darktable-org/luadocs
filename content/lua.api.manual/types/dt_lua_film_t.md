@@ -14,10 +14,10 @@ Attributes:
 
 * [has_tostring](../attributes#has_tostring)
 
-# dt_lua_film_t.move_image
+# dt_lua_film_t:move_image
 see [darktable.database.move_image](../../darktable/darktable.database#darktabledatabasemove_image)
 
-# dt_lua_film_t.copy_image
+# dt_lua_film_t:copy_image
 see [darktable.database.copy_image](../../darktable/darktable.database#darktabledatabasecopy_image)
 
 # dt_lua_film_t.#
@@ -45,7 +45,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-# dt_lua_film_t.delete
+# dt_lua_film_t:delete
 ```
 self:function(
   [force : boolean]
