@@ -54,7 +54,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-# dt_imageio_module_format_t.write_image
+# dt_imageio_module_format_t:write_image
 ```
 self:function(
   image : types.dt_lua_image_t,

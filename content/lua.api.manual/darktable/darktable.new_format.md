@@ -15,15 +15,18 @@ type : string
 Creates a new format object to export images
 
 * **type** - _string_ - The type of format object to create, one of :
+  * avif
   * copy
   * exr
   * j2k
   * jpeg
+  * jpegxl
   * pdf
   * pfm
   * png
   * ppm
   * tiff
   * webp
+  * xcf
 
 * **return** - _[types.dt_imageio_module_format_t](types.dt_imageio_module_format_t)_ - The newly created object. Exact type depends on the type passed
