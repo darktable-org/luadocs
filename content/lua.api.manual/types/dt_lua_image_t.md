@@ -35,8 +35,8 @@ see [darktable.styles.apply](../../darktable/darktable.styles#darktablestylesapp
 # dt_lua_image_t:duplicate
 see [darktable.database.duplicate](../../darktable/darktable.database#darktabledatabaseduplicate)
 
-# dt_lua_image_t:duplicate_image_with_history
-see [darktable.database.duplicate_with_history](../../darktable/darktable.database#darktabledatabaseduplicate_image_with_history)
+# dt_lua_image_t:duplicate_with_history
+see [darktable.database.duplicate_with_history](../../darktable/darktable.database#darktabledatabaseduplicate_with_history)
 
 # dt_lua_image_t:move
 see [darktable.database.move_image](../../darktable/darktable.database#darktabledatabasemove_image)
