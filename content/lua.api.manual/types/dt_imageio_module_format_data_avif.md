@@ -34,16 +34,6 @@ Attributes:
 
 * [write](../attributes#write)
 
-# dt_imageio_module_format_data_avif.speed
-
-`number`
-
-The speed to use at export time (8, 10, or 12).
-
-Attributes:
-
-* [write](../attributes#write)
-
 # dt_imageio_module_format_data_AVIF.compression_type
 
 [types.avif_compression_type_e](../types/avif_compression_type_e)
