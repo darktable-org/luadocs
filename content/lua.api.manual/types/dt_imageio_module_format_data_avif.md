@@ -34,7 +34,7 @@ Attributes:
 
 * [write](../attributes#write)
 
-# dt_imageio_module_format_data_AVIF.compression_type
+# dt_imageio_module_format_data_avif.compression_type
 
 [types.avif_compression_type_e](../types/avif_compression_type_e)
 
