@@ -12,16 +12,16 @@ Attributes:
 
 * [has_tostring](../attributes#has_tostring)
 
-# dt_style_t.delete
+# dt_style_t:delete
 see [darktable.styles.delete](../../darktable/darktable.styles#darktablestylesdelete)
 
-# dt_style_t.duplicate
+# dt_style_t:duplicate
 see [darktable.styles.duplicate](../../darktable/darktable.styles#darktablestylesduplicate)
 
-# dt_style_t.apply
+# dt_style_t:apply
 see [darktable.styles.apply](../../darktable/darktable.styles#darktablestylesapply)
 
-# dt_style_t.export
+# dt_style_t:export
 see [darktable.styles.export](../../darktable/darktable.styles#darktablestylesexport)
 
 # dt_style_t.name

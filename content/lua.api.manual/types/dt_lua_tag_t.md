@@ -14,13 +14,13 @@ Attributes:
 
 [has_tostring](../attributes#has_tostring)
 
-# dt_lua_tag_t.delete
+# dt_lua_tag_t:delete
 see [darktable.tags.delete](../../darktable/darktable.tags#darktabletagsdelete)
 
-# dt_lua_tag_t.attach
+# dt_lua_tag_t:attach
 see [darktable.tags.attach](../../darktable/darktable.tags#darktabletagsattach)
 
-# dt_lua_tag_t.detach
+# dt_lua_tag_t:detach
 see [darktable.tags.detach](../../darktable/darktable.tags#darktabletagsdetach)
 
 # dt_lua_tag_t.name
