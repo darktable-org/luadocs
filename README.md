@@ -76,7 +76,7 @@ Building the site to test locally can be done from the root of the repo.
 $ hugo server -D --disableFastRender
 ```
 
-The site should then be available at http://localhost:1313/dtdocs/
+The site should then be available at http://localhost:1313/luadocs/
 
 ## Production Website
 
