@@ -442,6 +442,18 @@ see [types.dt_lua_image_t.red](../types/dt_lua_image_t#dt_lua_image_tred)
 
 The date and time the image was last edited.
 
+# dt_lua_image_t:apply_sidecar
+```
+  self:function(
+    filename : string
+)
+```
+
+Apply an XMP sidecar file to the image
+
+* **self** - _[types.dt_lua_image_t](../types/dt_lua_image_t)_ - The image whose history will be deleted
+* **filename** - _string_ - The full path to the XMP sidecar to apply
+
 # dt_lua_image_t:reset
 ```
   self:function(
