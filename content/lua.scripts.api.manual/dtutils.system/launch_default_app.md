@@ -16,7 +16,7 @@ open file in default application
 
 ## USAGE
 ```
-local dsys = require "lib/dtutils.file"
+local dsys = require "lib/dtutils.system"
 result = dsys.launch_default_app(path)
 ```
 **path** - _string_ - a file path
