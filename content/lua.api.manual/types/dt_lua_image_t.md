@@ -372,37 +372,43 @@ Attributes:
 
 `number`
 
-The width of the image.
+The sensor width of the image.
 
 # dt_lua_image_t.height
 
 `number`
 
-The height of the image.
+The sensor height of the image.
 
 # dt_lua_image_t.final_width
 
 `number`
 
-The final width of the image
+The final width of the image with the correct orientation
 
 # dt_lua_image_t.final_height
 
 `number`
 
-The final height of the image
+The final height of the image with the correct orientation
 
 # dt_lua_image_t.p_width
 
 `number`
 
-The raw width of the image
+The pixelpipe (usable) width of the image
 
 # dt_lua_image_t.p_height
 
 `number`
 
-The raw height of the image
+The pixelpipe (usable) height of the image
+
+# dt_lua_image_t.aspect_ratio
+
+`number`
+
+The aspect ratio of the image.  Less than 1 is portrait orientation, 1 is square, and greater than 1 is landscape.
 
 # dt_lua_image_t.rating
 
