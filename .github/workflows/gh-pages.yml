@@ -7,27 +7,28 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - uses: cachix/install-nix-action@v25
         with:
-          hugo-version: '0.76.5'
-          extended: true
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: npm Install
-        run: cd themes/hugo-darktable-docs-theme/assets/ && npm install
+      - name: Install assets
+        run: nix develop --command bash -c "cd themes/hugo-darktable-docs-theme/assets/ && yarn install"
 
-      - name: Build
-        run: hugo
+      - name: Check for broken links
+        run: nix develop --command bash -c "hugo server --disableFastRender --logLevel debug --config config.yaml -b http://localhost:1313/luadocs/ & sleep 30 && lychee --exclude \.*pdf$ --exclude \.*epub$ --exclude \.*#$ --no-progress http://localhost:1313/luadocs/index.html && pkill hugo"
+
+      - name: build site
+        run: nix develop --command bash -c "./tools/build-all.sh https://darktable-org.github.io/luadocs/"
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          force_orphan: true
