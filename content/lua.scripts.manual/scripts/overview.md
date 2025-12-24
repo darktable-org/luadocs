@@ -18,6 +18,7 @@ These scripts are written primarily by the darktable developers and maintained b
 
 Name|Standalone|Op/Sys |Purpose
 ----|:--------:|:-----:|-------
+[apply_camera_style](official/apply_camera_style.md)|Yes|LMW|Apply camera styles to images
 [check_for_updates](official/check_for_updates.md)|Yes|LMW|Check for updates to darktable
 [copy_paste_metadata](official/copy_paste_metadata.md)|Yes|LMW|Copy and paste metadata, tags, ratings, and color labels between images
 [delete_long_tags](official/delete_long_tags.md)|Yes|LMW|Delete all tags longer than a specified length
@@ -27,6 +28,7 @@ Name|Standalone|Op/Sys |Purpose
 [image_path_in_ui](official/image_path_in_ui.md)|Yes|LMW|Plugin to display selected image path
 [import_filter_manager](official/import_filter_manager.md)|Yes|LMW|Manager for import filters
 [import_filters](official/import_filters.md)|No|LMW|Two import filters for use with import_filter_manager
+[regenerate_thumbnails](official/regenerate_thumbnails.md)|Yes|LMW|Regenerate missing lighttable thumbnails
 [save_selection](official/save_selection.md)|Yes|LMW|Provide save and restore from multiple selection buffers
 [selection_to_pdf](official/selection_to_pdf.md)|No|L|Generate a PDF file from the selected images
 

@@ -8,10 +8,11 @@ author: "people"
 
 # Current API
 
-The Lua API version used in darktable 5.2.x is 9.5.0.
+The Lua API version used in darktable 5.4.x is 9.6.0.
 
 Previous API versions were
 
+- darktable-5.2.x  -  Lua API 9.5.0
 - darktable-5.0.x  -  Lua API 9.4.0
 - darktable-4.8.x  -  Lua API 9.3.0
 - darktable-4.6.x  -  Lua API 9.2.0
