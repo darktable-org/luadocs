@@ -1,9 +1,8 @@
 baseURL: https://darktable-org.github.io/luadocs/
 languageCode: en-us
-title: darktable lua documentation
+title: darktable Lua documentation
 theme:
   - hugo-darktable-docs-theme
-  - hugo-bootstrap-bare
 markup:
   highlight:
     style: algol_nu
