@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dtutils.log on darktable Lua documentation</title>
+    <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/</link>
+    <description>Recent content in dtutils.log on darktable Lua documentation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>details</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/details/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;dtutils.log&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;darktable lua logging library&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local log = require &amp;#34;lib/dtutils.log&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;DESCRIPTION&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;log&lt;/strong&gt; provides a multi-level logging solution for use with&#xA;the darktable lua scripts.  With this library you can leave log messages&#xA;scattered through out your code and only turn them on as necessary.&lt;/p&gt;&#xA;&lt;h2 id=&#34;return-value&#34;&gt;&lt;a href=&#34;#return-value&#34;&gt;🔗&lt;/a&gt;RETURN VALUE&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;log&lt;/strong&gt; - &lt;em&gt;library&lt;/em&gt; - the darktable lua logging functions&lt;/p&gt;&#xA;&lt;h2 id=&#34;functions&#34;&gt;&lt;a href=&#34;#functions&#34;&gt;🔗&lt;/a&gt;FUNCTIONS&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/caller/&#34;&gt;caller&lt;/a&gt; - get the name and line number of the calling routine&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>caller</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/caller/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/caller/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;caller&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;get the name and line number of the calling routine&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local log = require &amp;#34;lib/dtutils.log&amp;#34;&#xA;result = log.caller(level)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;level&lt;/strong&gt; - &lt;em&gt;number&lt;/em&gt; - the  number of stack levels to go down to retrieve the caller routine information&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;DESCRIPTION&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;caller&lt;/strong&gt; gets the name and line number of the calling routine and returns it&lt;/p&gt;&#xA;&lt;h2 id=&#34;return-value&#34;&gt;&lt;a href=&#34;#return-value&#34;&gt;🔗&lt;/a&gt;RETURN VALUE&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;result&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - the name and line number of the calling function or &amp;lsquo;callback: &amp;rsquo; if the attempt to get the caller returns nil&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>engine</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/engine/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;engine&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;get and set the output engine&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local log = require &amp;#34;lib/dtutils.log&amp;#34;&#xA;result = log.engine(level, ...)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;level&lt;/strong&gt; - &lt;em&gt;table&lt;/em&gt; - the log level to get or set the engine for, one of log.debug, log.info, log.warn, log.error&#xA;log.success, log.always, log.screen, log.critical&lt;br&gt;&#xA;&lt;strong&gt;&amp;hellip;&lt;/strong&gt; - &lt;em&gt;function&lt;/em&gt; - the output function, one of dt.print, dt.print_error, dt.print_log, print&#xA;if not function is included, the current engine is returned for the specified log level&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>log_level</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/log_level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/log_level/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;log_level&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;get or set the log level&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local log = require &amp;#34;lib/log&amp;#34;&#xA;local result = log.log_level(...)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;&amp;hellip;&lt;/strong&gt; - &lt;em&gt;arguments&lt;/em&gt; - if none is supplied, then the current log level is returned as one of:&#xA;log.debug, log.info, log.warn, log.error, log.success.  If one of log.debug, log.info, log.warn,&#xA;log.error, or log.success is supplied as the argument then the log level is set to that value.  All&#xA;log levels greater than or equal in value will be enabled.  Any levels of lesser value will be disabled.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>msg</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/msg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.log/msg/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;msg&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;print a log message&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local log = require &amp;#34;lib/log&amp;#34;&#xA;log.msg(level, ...)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;level&lt;/strong&gt; - &lt;em&gt;table&lt;/em&gt; - the type of message, one of:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;log.debug    - debugging messages&lt;/li&gt;&#xA;&lt;li&gt;log.info     - informational messages&lt;/li&gt;&#xA;&lt;li&gt;log.warn     - warning messages&lt;/li&gt;&#xA;&lt;li&gt;log.error    - error messages&lt;/li&gt;&#xA;&lt;li&gt;log.success  - success messages&lt;/li&gt;&#xA;&lt;li&gt;log.always   - an internal message for debugging&lt;/li&gt;&#xA;&lt;li&gt;log.screen   - output 1 line of text to the screen&lt;/li&gt;&#xA;&lt;li&gt;log.critical - print a critical message to the console&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;&amp;hellip;&lt;/strong&gt; - &lt;em&gt;string(s)&lt;/em&gt; - the message to print, which could be a comma separated set of strings&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

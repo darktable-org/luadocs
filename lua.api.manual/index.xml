@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lua API Manual on darktable Lua documentation</title>
+    <link>https://darktable-org.github.io/luadocs/lua.api.manual/</link>
+    <description>Recent content in Lua API Manual on darktable Lua documentation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://darktable-org.github.io/luadocs/lua.api.manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lua API Version</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/version/</guid>
+      <description>&lt;h1 id=&#34;current-api&#34;&gt;&lt;a href=&#34;#current-api&#34;&gt;🔗&lt;/a&gt;Current API&lt;/h1&gt;&#xA;&lt;p&gt;The Lua API version used in darktable 5.4.x is 9.6.0.&lt;/p&gt;&#xA;&lt;p&gt;Previous API versions were&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;darktable-5.2.x  -  Lua API 9.5.0&lt;/li&gt;&#xA;&lt;li&gt;darktable-5.0.x  -  Lua API 9.4.0&lt;/li&gt;&#xA;&lt;li&gt;darktable-4.8.x  -  Lua API 9.3.0&lt;/li&gt;&#xA;&lt;li&gt;darktable-4.6.x  -  Lua API 9.2.0&lt;/li&gt;&#xA;&lt;li&gt;darktable 4.4.x  -  Lua API 9.1.0&lt;/li&gt;&#xA;&lt;li&gt;darktable 4.2.x  -  Lua API 9.0.0&lt;/li&gt;&#xA;&lt;li&gt;darktable 3.8.x  -  Lua API 8.0.0&lt;/li&gt;&#xA;&lt;li&gt;darktable 3.6.x  -  Lua API 7.0.0&lt;/li&gt;&#xA;&lt;li&gt;darktable 3.2.x  -  Lua API 6.0.0&lt;/li&gt;&#xA;&lt;li&gt;darktable 2.4.x  -  Lua API 5.0.0&lt;/li&gt;&#xA;&lt;li&gt;darktable 2.2.x  -  Lua API 4.0.0&lt;/li&gt;&#xA;&lt;li&gt;darktable 2.0.x  -  Lua API 3.0.0&lt;/li&gt;&#xA;&lt;li&gt;darktable 1.6.1  -  Lua API 2.0.2&lt;/li&gt;&#xA;&lt;li&gt;darktable 1.6.0  -  Lua API 2.0.1&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>attributes</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/attributes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/attributes/</guid>
+      <description>&lt;p&gt;This section documents various attributes used throughout the documentation.&lt;/p&gt;&#xA;&lt;h1 id=&#34;write&#34;&gt;&lt;a href=&#34;#write&#34;&gt;🔗&lt;/a&gt;write&lt;/h1&gt;&#xA;&lt;p&gt;This object is a variable that can be written to.&lt;/p&gt;&#xA;&lt;h1 id=&#34;has_tostring&#34;&gt;&lt;a href=&#34;#has_tostring&#34;&gt;🔗&lt;/a&gt;has_tostring&lt;/h1&gt;&#xA;&lt;p&gt;This object has a specific reimplementation of the &amp;ldquo;tostring&amp;rdquo; method that allows pretty-printing it.&lt;/p&gt;&#xA;&lt;h1 id=&#34;implicit_yield&#34;&gt;&lt;a href=&#34;#implicit_yield&#34;&gt;🔗&lt;/a&gt;implicit_yield&lt;/h1&gt;&#xA;&lt;p&gt;This call will release the Lua lock while executing, thus allowing other Lua callbacks to run.&lt;/p&gt;&#xA;&lt;h1 id=&#34;parent&#34;&gt;&lt;a href=&#34;#parent&#34;&gt;🔗&lt;/a&gt;parent&lt;/h1&gt;&#xA;&lt;p&gt;This object inherits some methods from another object. You can call the methods from the parent on the child object&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

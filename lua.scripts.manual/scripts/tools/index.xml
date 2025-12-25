@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on darktable Lua documentation</title>
+    <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/</link>
+    <description>Recent content in tools on darktable Lua documentation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>executable_manager</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/executable_manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/executable_manager/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;Name&lt;/h2&gt;&#xA;&lt;p&gt;executable_manager.lua - a tool for managing external executables used by darktable lua scripts&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;executable_manager is a tool for managing the executable preferences stored in the darktablerc file.&#xA;On startup the darktablerc file is scanned and a widget is built for each executable path.  The user&#xA;can select the executable from a drop down list and then modify the settings as desired.&lt;/p&gt;&#xA;&lt;p&gt;Any changes made using executable_manager won&amp;rsquo;t be saved in the darktablerc file until darktable exits, but&#xA;the preference is updated when the change is made so scripts will pick up the changes without restarting&#xA;darktable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>gen_i18n_mo</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/gen_i18n_mo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/gen_i18n_mo/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;Name&lt;/h2&gt;&#xA;&lt;p&gt;gen_i18n_mo - generate translation files from the source and place them in the appropriate locale directory&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;gen_i18n_mo finds all the .po files scattered throughout the script tree, compiles them into&#xA;.mo files and places them in the correct locale directory for use by the gettext tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;Usage&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;start this script from script manager.  Stop the script after it runs or it will regenerate the translation files each time darktable starts.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;additional-software-required&#34;&gt;&lt;a href=&#34;#additional-software-required&#34;&gt;🔗&lt;/a&gt;Additional Software Required&lt;/h2&gt;&#xA;&lt;h2 id=&#34;limitations&#34;&gt;&lt;a href=&#34;#limitations&#34;&gt;🔗&lt;/a&gt;Limitations&lt;/h2&gt;&#xA;&lt;h2 id=&#34;author&#34;&gt;&lt;a href=&#34;#author&#34;&gt;🔗&lt;/a&gt;Author&lt;/h2&gt;&#xA;&lt;h2 id=&#34;change-log&#34;&gt;&lt;a href=&#34;#change-log&#34;&gt;🔗&lt;/a&gt;Change Log&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>get_lib_manpages</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/get_lib_manpages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/get_lib_manpages/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;Name&lt;/h2&gt;&#xA;&lt;p&gt;get_lib_manpages.lua - retrieve the included library documentation and output it as man pages&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;This script retrieves the included documentation in the script libaries and outputs them to the system temporary directory as man pages.  Stop this script after it runs otherwise it will regenerate the pages each time it runs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;Usage&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;start this script from script manager&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;additional-software-required&#34;&gt;&lt;a href=&#34;#additional-software-required&#34;&gt;🔗&lt;/a&gt;Additional Software Required&lt;/h2&gt;&#xA;&lt;h2 id=&#34;limitations&#34;&gt;&lt;a href=&#34;#limitations&#34;&gt;🔗&lt;/a&gt;Limitations&lt;/h2&gt;&#xA;&lt;h2 id=&#34;author&#34;&gt;&lt;a href=&#34;#author&#34;&gt;🔗&lt;/a&gt;Author&lt;/h2&gt;&#xA;&lt;h2 id=&#34;change-log&#34;&gt;&lt;a href=&#34;#change-log&#34;&gt;🔗&lt;/a&gt;Change Log&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>get_libdoc</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/get_libdoc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/get_libdoc/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;Name&lt;/h2&gt;&#xA;&lt;p&gt;get_libdoc.lua - retrieve the included library documentation and output it as text&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;Description&lt;/h2&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;Usage&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;start this script from script manager.  Disable it after it finishes or it will generate the pages every time darktable runs.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;additional-software-required&#34;&gt;&lt;a href=&#34;#additional-software-required&#34;&gt;🔗&lt;/a&gt;Additional Software Required&lt;/h2&gt;&#xA;&lt;h2 id=&#34;limitations&#34;&gt;&lt;a href=&#34;#limitations&#34;&gt;🔗&lt;/a&gt;Limitations&lt;/h2&gt;&#xA;&lt;h2 id=&#34;author&#34;&gt;&lt;a href=&#34;#author&#34;&gt;🔗&lt;/a&gt;Author&lt;/h2&gt;&#xA;&lt;h2 id=&#34;change-log&#34;&gt;&lt;a href=&#34;#change-log&#34;&gt;🔗&lt;/a&gt;Change Log&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>script_manager</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/script_manager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/script_manager/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;Name&lt;/h2&gt;&#xA;&lt;p&gt;script_manager.lua - a tool for managing the darktable lua scripts&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;script_manager is designed to be called from the users luarc file and used to manage the lua scripts.&lt;/p&gt;&#xA;&lt;p&gt;On startup script_manager scans the lua scripts directory to see what scripts are present.&#xA;Scripts are sorted by &amp;lsquo;category&amp;rsquo; based on what sub-directory they are in.  With no&#xA;additional script repositories iinstalled, the categories are contrib, examples, official&#xA;and tools.  When a category is selected the buttons show the script name and whether the&#xA;script is started or stopped.  The button is a toggle, so if the script is stopped click&#xA;the button to start it and vice versa.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

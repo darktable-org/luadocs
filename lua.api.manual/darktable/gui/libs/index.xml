@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>darktable.gui.libs on darktable Lua documentation</title>
+    <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/</link>
+    <description>Recent content in darktable.gui.libs on darktable Lua documentation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>darktable.gui.libs overview</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/overview/</guid>
+      <description>&lt;p&gt;This table allows referencing all lib objects.&#xA;lib objects are the graphical blocks within each view.&#xA;To quickly figure out which lib is which, you can use the following code, which will make a&#xA;given lib blink.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local dt = require &amp;#34;darktable&amp;#34;&#xA;local tested_module=&amp;#34;global_toolbox&amp;#34;&#xA;dt.gui.libs[tested_module].visible=false&#xA;dt.control.sleep(2000)&#xA;while true do&#xA;  dt.gui.libs[tested_module].visible = not dt.gui.libs[tested_module].visible&#xA;  dt.control.sleep(2000)&#xA;end&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.backgroundjobs</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/backgroundjobs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/backgroundjobs/</guid>
+      <description>&lt;p&gt;The window displaying the currently running jobs&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.camera</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/camera/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/camera/</guid>
+      <description>&lt;p&gt;The camera selection UI&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.collect</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/collect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/collect/</guid>
+      <description>&lt;p&gt;The collection UI element that allows to filter images by collection&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibscollectfilter&#34;&gt;&lt;a href=&#34;#darktableguilibscollectfilter&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.collect.filter&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  [rules : array of types.dt_lib_collect_params_rule_t]&#xA;) : array oftypes.dt_lib_collect_params_rule_t&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Get or change the list of visible images&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#implicit_yield&#34;&gt;implicit_yield&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;[rules]&lt;/strong&gt; - &lt;em&gt;array of &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lib_collect_params_rule_t/&#34;&gt;types.dt_lib_collect_params_rule_t&lt;/a&gt;&lt;/em&gt; - A table of rules describing the filter. These rules will be applied after this call&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;return&lt;/strong&gt; - &lt;em&gt;array of &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lib_collect_params_rule_t/&#34;&gt;types.dt_lib_collect_params_rule_t&lt;/a&gt;&lt;/em&gt; - The rules that were applied before this call.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibscollectnew_rule&#34;&gt;&lt;a href=&#34;#darktableguilibscollectnew_rule&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.collect.new_rule&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;) : types.dt_lib_collect_params_rule_t&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Returns a newly created rule object&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.colorlabels</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/colorlabels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/colorlabels/</guid>
+      <description>&lt;p&gt;The color buttons that allow to set labels on an image&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.colorpicker</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/colorpicker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/colorpicker/</guid>
+      <description>&lt;p&gt;The colorpicker menu&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.copy_history</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/copy_history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/copy_history/</guid>
+      <description>&lt;p&gt;The UI element that manipulates history&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.darktable_label</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/darktable_label/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/darktable_label/</guid>
+      <description>&lt;p&gt;The darktable logo in the upper left corner&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.export</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/export/</guid>
+      <description>&lt;p&gt;The export menu&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.filmstrip</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/filmstrip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/filmstrip/</guid>
+      <description>&lt;p&gt;The filmstrip at the bottom of some views&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.filter</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/filter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/filter/</guid>
+      <description>&lt;p&gt;The image-filter menus at the top of the UI&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsfiltersort&#34;&gt;&lt;a href=&#34;#darktableguilibsfiltersort&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.filter.sort&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  [sort : types.dt_collection_sort_t]&#xA;) : types.dt_collection_sort_t&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the collection sort field.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;[sort]&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_collection_sort_t/&#34;&gt;types.dt_collection_sort_t&lt;/a&gt;&lt;/em&gt; - The new field to sort by. If empty the current sort field is unchanged&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;return&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_collection_sort_t/&#34;&gt;types.dt_collection_sort_t&lt;/a&gt;&lt;/em&gt; = The current sort field.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsfiltersort_order&#34;&gt;&lt;a href=&#34;#darktableguilibsfiltersort_order&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.filter.sort_order&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  [order : types.dt_collection_sort_order_t]&#xA;) : types.dt_collection_sort_order_t&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the collection sort order.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;[order]&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_collection_sort_order_t/&#34;&gt;types.dt_collection_sort_order_t&lt;/a&gt;&lt;/em&gt; - The order to sort by. If empty the current sort order is unchanged.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;return&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_collection_sort_order_t/&#34;&gt;types.dt_collection_sort_order_t&lt;/a&gt;&lt;/em&gt; - The current sort order.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsfilterrating&#34;&gt;&lt;a href=&#34;#darktableguilibsfilterrating&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.filter.rating&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  [rating : types.dt_collection_filter_t]&#xA;) : types.dt_collection_filter_t&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the collection rating filter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.geotagging</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/geotagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/geotagging/</guid>
+      <description>&lt;p&gt;The geotagging time synchronisation UI&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.global_toolbox</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/global_toolbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/global_toolbox/</guid>
+      <description>&lt;p&gt;The common tools to all view (settings, grouping&amp;hellip;)&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsglobal_toolboxgrouping&#34;&gt;&lt;a href=&#34;#darktableguilibsglobal_toolboxgrouping&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.global_toolbox.grouping&lt;/h2&gt;&#xA;&lt;p&gt;boolean- The current status of the image grouping option&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#write&#34;&gt;write&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsglobal_toolboxshow_overlays&#34;&gt;&lt;a href=&#34;#darktableguilibsglobal_toolboxshow_overlays&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.global_toolbox.show_overlays&lt;/h2&gt;&#xA;&lt;p&gt;boolean - the current status of the image overlays option&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#write&#34;&gt;write&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.hinter</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/hinter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/hinter/</guid>
+      <description>&lt;p&gt;The small line of text at the top of the UI showing the number of selected images&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.histogram</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/histogram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/histogram/</guid>
+      <description>&lt;p&gt;The histogram widget&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.history</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/history/</guid>
+      <description>&lt;p&gt;The history manipulation menu&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.image</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/image/</guid>
+      <description>&lt;p&gt;The UI element that manipulates the current images&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsimageregister_action&#34;&gt;&lt;a href=&#34;#darktableguilibsimageregister_action&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.image.register_action&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  name : string,&#xA;  label : string,&#xA;  callback : function,&#xA;  [tooltip : string]&#xA;)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add a new button and call a callback when it is clicked&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;name&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - A unique name for the action that can be referenced later to destroy it&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;label&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - The label to display on the button&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;callback&lt;/strong&gt; - &lt;em&gt;function&lt;/em&gt; - The function to call when the button is pressed&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;[tooltip]&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - The tooltip to use on the new button&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;callback -&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.import</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/import/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/import/</guid>
+      <description>&lt;p&gt;The buttons to start importing images&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsimportregister_widget&#34;&gt;&lt;a href=&#34;#darktableguilibsimportregister_widget&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.import.register_widget&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  widget : types.lua_widget&#xA;)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add a widget in the option expander of the import dialog&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;widget&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/lua_widget/&#34;&gt;types.lua_widget&lt;/a&gt;&lt;/em&gt; - The widget to add to the dialog. The reset callback of the widget will be called whenever the dialog is opened.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.lighttable_mode</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/lighttable_mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/lighttable_mode/</guid>
+      <description>&lt;p&gt;The navigation and zoom level UI in lighttable&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibslighttable_modelayout&#34;&gt;&lt;a href=&#34;#darktableguilibslighttable_modelayout&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.lighttable_mode.layout&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  [layout : types.dt_lighttable_layout_t]&#xA;) : types.dt_lighttable_layout_t&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the lighttable layout.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;[layout]&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lighttable_layout_t/&#34;&gt;types.dt_lighttable_layout_t&lt;/a&gt;&lt;/em&gt; - The layout to switch to. If empty the current layout is unchanged&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;return&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lighttable_layout_t/&#34;&gt;types.dt_lighttable_layout_t&lt;/a&gt;&lt;/em&gt; - the current layout&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibslighttable_modezoom_level&#34;&gt;&lt;a href=&#34;#darktableguilibslighttable_modezoom_level&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.lighttable_mode.zoom_level&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  [level : int]&#xA;) : int&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change the lighttable zoom level.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;[level]&lt;/strong&gt; - &lt;em&gt;int&lt;/em&gt; - The zoom level to switch to. If empty the current zoom level is unchanged&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;return&lt;/strong&gt; - &lt;em&gt;int&lt;/em&gt; - the current zoom level&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.live_view</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/live_view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/live_view/</guid>
+      <description>&lt;p&gt;The liveview window&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.location</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/location/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/location/</guid>
+      <description>&lt;p&gt;The location ui&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.map_settings</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/map_settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/map_settings/</guid>
+      <description>&lt;p&gt;The map setting window&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.masks</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/masks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/masks/</guid>
+      <description>&lt;p&gt;The masks window&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.metadata</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/metadata/</guid>
+      <description>&lt;p&gt;The widget allowing modification of metadata fields on the current image&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.metadata_view</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/metadata_view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/metadata_view/</guid>
+      <description>&lt;p&gt;The widget displaying metadata about the current image&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsmetadata_viewregister_info&#34;&gt;&lt;a href=&#34;#darktableguilibsmetadata_viewregister_info&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.metadata_view.register_info&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  name : string,&#xA;  callback : function&#xA;)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Register a field in the image information module with a callback function to update the field&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;name&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - The name displayed for the new information&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;callback&lt;/strong&gt; - &lt;em&gt;function&lt;/em&gt; - The function providing the info&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;callback -&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  image : types.dt_lua_image_t&#xA;) : string&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;image&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_image_t/&#34;&gt;types.dt_lua_image_t&lt;/a&gt;&lt;/em&gt; - The image to analyze&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;return&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - The extra information to display&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsmetadata_viewdestroy_info&#34;&gt;&lt;a href=&#34;#darktableguilibsmetadata_viewdestroy_info&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.metadata_view.destroy_info&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  name : string&#xA;)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Remove the named field from the image information module and it&amp;rsquo;s associated callback&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.modulegroups</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/modulegroups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/modulegroups/</guid>
+      <description>&lt;p&gt;The icons describing the different iop groups&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.module_toolbox</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/module_toolbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/module_toolbox/</guid>
+      <description>&lt;p&gt;The tools on the bottom line of the UI (overexposure)&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.navigation</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/navigation/</guid>
+      <description>&lt;p&gt;The full image preview to allow navigation&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.print_settings</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/print_settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/print_settings/</guid>
+      <description>&lt;p&gt;The settings window in the print view&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.ratings</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/ratings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/ratings/</guid>
+      <description>&lt;p&gt;The stars to set the rating of an image&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.recentcollect</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/recentcollect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/recentcollect/</guid>
+      <description>&lt;p&gt;The recent collection UI element&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.select</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/select/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/select/</guid>
+      <description>&lt;p&gt;The buttons that allow quickly changing the selection&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibsselectregister_selection&#34;&gt;&lt;a href=&#34;#darktableguilibsselectregister_selection&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.select.register_selection&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  name : string&#xA;  label : string,&#xA;  callback : function,&#xA;  [tooltip : string]&#xA;)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add a new button and call a callback when it is clicked&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;name&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - The name to use to refer to the select button&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;label&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - The label to display on the button&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;callback&lt;/strong&gt; - &lt;em&gt;function&lt;/em&gt; - The function to call when the button is pressed&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;[tooltip]&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - The tooltip to use on the new button&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;callback -&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.session</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/session/</guid>
+      <description>&lt;p&gt;The session UI when tethering&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.snapshots</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/snapshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/snapshots/</guid>
+      <description>&lt;p&gt;The UI element that manipulates snapshots in darkroom&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibssnapshotsratio&#34;&gt;&lt;a href=&#34;#darktableguilibssnapshotsratio&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.snapshots.ratio&lt;/h2&gt;&#xA;&lt;p&gt;number - The place in the screen where the line separating the snapshot is. Between 0 and 1&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#write&#34;&gt;write&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibssnapshotsdirection&#34;&gt;&lt;a href=&#34;#darktableguilibssnapshotsdirection&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.snapshots.direction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/snapshot_direction_t/&#34;&gt;types.snapshot_direction_t&lt;/a&gt; - The direction of the snapshot overlay&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#write&#34;&gt;write&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguilibssnapshots&#34;&gt;&lt;a href=&#34;#darktableguilibssnapshots&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.snapshots.#&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_snapshot_t/&#34;&gt;types.dt_lua_snapshot_t&lt;/a&gt; - Each snapshot appears with a numerical index; you can iterate over them with ipairs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;darktableguilibssnapshotsselected&#34;&gt;&lt;a href=&#34;#darktableguilibssnapshotsselected&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.snapshots.selected&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_snapshot_t/&#34;&gt;types.dt_lua_snapshot_t&lt;/a&gt; - The currently selected snapshot&lt;/p&gt;&#xA;&lt;h2 id=&#34;darktableguilibssnapshotstake_snapshot&#34;&gt;&lt;a href=&#34;#darktableguilibssnapshotstake_snapshot&#34;&gt;🔗&lt;/a&gt;darktable.gui.libs.snapshots.take_snapshot&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Take a snapshot of the current image and add it to the UI&#xA;The snapshot file will be generated at the next redraw of the main window&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.styles</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/styles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/styles/</guid>
+      <description>&lt;p&gt;The style selection menu&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.tagging</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/tagging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/tagging/</guid>
+      <description>&lt;p&gt;The tag manipulation UI&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.viewswitcher</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/viewswitcher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/viewswitcher/</guid>
+      <description>&lt;p&gt;The labels allowing to switch view&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.libs.view_toolbox</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/view_toolbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/libs/view_toolbox/</guid>
+      <description>&lt;p&gt;The view_toolbox window&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_lib_t/&#34;&gt;types.dt_lua_lib_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

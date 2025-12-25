@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dtutils.debug on darktable Lua documentation</title>
+    <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/</link>
+    <description>Recent content in dtutils.debug on darktable Lua documentation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>details</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/details/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;dtutils.debug&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;debugging helpers used in developing darktable lua scripts&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;require &amp;#34;lib/dtutils.debug&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;DESCRIPTION&lt;/h2&gt;&#xA;&lt;p&gt;dtutils.debug provides an interface to the darktable debugging routines.&lt;/p&gt;&#xA;&lt;h2 id=&#34;return-value&#34;&gt;&lt;a href=&#34;#return-value&#34;&gt;🔗&lt;/a&gt;RETURN VALUE&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;dd&lt;/strong&gt; - &lt;em&gt;library&lt;/em&gt; - the darktable lua debugging helpers&lt;/p&gt;&#xA;&lt;h2 id=&#34;functions&#34;&gt;&lt;a href=&#34;#functions&#34;&gt;🔗&lt;/a&gt;FUNCTIONS&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/dprint/&#34;&gt;dprint&lt;/a&gt; - pass a variable to darktable.debug.dump and print the results to stdout&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/new_tracepoint/&#34;&gt;new_tracepoint&lt;/a&gt; - create a function returning a tracepoint&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/terse_dump/&#34;&gt;terse_dump&lt;/a&gt; - set darktable.debug.known to shorten all image dumps to a single line&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/tracepoint/&#34;&gt;tracepoint&lt;/a&gt; - print out a tracepoint and dump the arguments&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>dprint</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/dprint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/dprint/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;dprint&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;pass a variable to darktable.debug.dump and print the results to stdout&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local dd = require &amp;#34;lib/dtutils.debug&amp;#34;&#xA;dd.dprint(var)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;var&lt;/strong&gt; - &lt;em&gt;variable&lt;/em&gt; - any variable that you want to see the contents of&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;DESCRIPTION&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;dprint&lt;/strong&gt; is a wrapper around &lt;strong&gt;darktable.debug.dump&lt;/strong&gt;, will directly print to stdout,&#xA;same calling convention&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>new_tracepoint</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/new_tracepoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/new_tracepoint/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;new_tracepoint&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;create a function returning a tracepoint&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local dd = require &amp;#34;lib/dtutils.debug&amp;#34;&#xA;local result = dd.new_tracepoint(name, ...)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;name&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - the name of the tracepoint to print out&lt;br&gt;&#xA;&lt;strong&gt;&amp;hellip;&lt;/strong&gt; - &lt;em&gt;arguments&lt;/em&gt; - variables to dump the contents of&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;DESCRIPTION&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;new_tracepoint&lt;/strong&gt; returns a tracepoint function with the given name.&#xA;This is mainly used to debug callbacks.&lt;/p&gt;&#xA;&lt;h2 id=&#34;return-value&#34;&gt;&lt;a href=&#34;#return-value&#34;&gt;🔗&lt;/a&gt;RETURN VALUE&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;result&lt;/strong&gt; - &lt;em&gt;function&lt;/em&gt; - a function that returns the result of a tracepoint&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>terse_dump</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/terse_dump/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/terse_dump/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;terse_dump&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;set darktable.debug.known to shorten all image dumps to a single line&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local dd = require &amp;#34;lib/dtutils.debug&amp;#34;&#xA;dd.terse_dump()&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;DESCRIPTION&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;terse_dump&lt;/strong&gt; sets &lt;strong&gt;darktable.debug.known&lt;/strong&gt; to shorten all images to a single line.&#xA;If you don&amp;rsquo;t need to debug the content of images, this will avoid them flooding your logs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>tracepoint</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/tracepoint/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.api.manual/dtutils.debug/tracepoint/</guid>
+      <description>&lt;h2 id=&#34;name&#34;&gt;&lt;a href=&#34;#name&#34;&gt;🔗&lt;/a&gt;NAME&lt;/h2&gt;&#xA;&lt;p&gt;tracepoint&lt;/p&gt;&#xA;&lt;h2 id=&#34;synopsis&#34;&gt;&lt;a href=&#34;#synopsis&#34;&gt;🔗&lt;/a&gt;SYNOPSIS&lt;/h2&gt;&#xA;&lt;p&gt;print out a tracepoint and dump the arguments&lt;/p&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;&lt;a href=&#34;#usage&#34;&gt;🔗&lt;/a&gt;USAGE&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;local dd = require &amp;#34;lib/dtutils.debug&amp;#34;&#xA;local result = dd.tracepoint(name, ...)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;name&lt;/strong&gt; - &lt;em&gt;string&lt;/em&gt; - the name of the tracepoint to print out&lt;br&gt;&#xA;&lt;strong&gt;&amp;hellip;&lt;/strong&gt; - &lt;em&gt;arguments&lt;/em&gt; - variables to dump the contents of&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;&lt;a href=&#34;#description&#34;&gt;🔗&lt;/a&gt;DESCRIPTION&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;tracepoint&lt;/strong&gt; prints its name and dumps its parameters using&#xA;&lt;strong&gt;darktable.debug&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;return-value&#34;&gt;&lt;a href=&#34;#return-value&#34;&gt;🔗&lt;/a&gt;RETURN VALUE&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;result&lt;/strong&gt; - &lt;em&gt;&amp;hellip;&lt;/em&gt; - the supplied argument list&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

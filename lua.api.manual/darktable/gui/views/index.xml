@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>darktable.gui.views on darktable Lua documentation</title>
+    <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/</link>
+    <description>Recent content in darktable.gui.views on darktable Lua documentation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>darktable.gui.views overview</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/overview/</guid>
+      <description>&lt;p&gt;The different views in darktable&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.views.darkroom</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/darkroom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/darkroom/</guid>
+      <description>&lt;p&gt;The darkroom view&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;../../types/dt_lua_view_t&#34;&gt;types.dt_lua_view_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguiviewsdarkroomdisplay_image&#34;&gt;&lt;a href=&#34;#darktableguiviewsdarkroomdisplay_image&#34;&gt;🔗&lt;/a&gt;darktable.gui.views.darkroom.display_image&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  [image : types.dt_lua_image_t]&#xA;) : types.dt_lua_image_t&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Display an image in darkroom view.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;**[image] - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_image_t/&#34;&gt;types.dt_lua_image_t&lt;/a&gt;&lt;/em&gt; - The image to be displayed. If the image is not given, nothing will be changed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;return&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_image_t/&#34;&gt;types.dt_lua_image_t&lt;/a&gt;&lt;/em&gt; - The image currently displayed.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.views.lighttable</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/lighttable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/lighttable/</guid>
+      <description>&lt;p&gt;The lighttable view&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_view_t/&#34;&gt;types.dt_lua_view_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguiviewslighttableis_image_visible&#34;&gt;&lt;a href=&#34;#darktableguiviewslighttableis_image_visible&#34;&gt;🔗&lt;/a&gt;darktable.gui.views.lighttable.is_image_visible&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  image : types.dt_lua_image_t&#xA;) : types.dt_lua_image_t&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Check if the image is visible in lighttable view. The lighttable must be in file manager or&#xA;zoomable mode.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;image&lt;/strong&gt; - &lt;em&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_image_t/&#34;&gt;types.dt_lua_image_t&lt;/a&gt;&lt;/em&gt; - The image to be checked.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;return&lt;/strong&gt; - &lt;em&gt;boolean&lt;/em&gt; - True if the image is displayed. False if the image is partially displayed or not displayed.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguiviewslighttableset_image_visible&#34;&gt;&lt;a href=&#34;#darktableguiviewslighttableset_image_visible&#34;&gt;🔗&lt;/a&gt;darktable.gui.views.lighttable.set_image_visible&lt;/h2&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;function(&#xA;  image : types.dt_lua_image_t&#xA;) : types.dt_lua_image_t&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Set the image visible in lighttable view. The lighttable must be in file manager or zoomable&#xA;mode.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.views.map</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/map/</guid>
+      <description>&lt;p&gt;The map view&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#paren&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_view_t/&#34;&gt;types.dt_lua_view_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguiviewsmaplatitude&#34;&gt;&lt;a href=&#34;#darktableguiviewsmaplatitude&#34;&gt;🔗&lt;/a&gt;darktable.gui.views.map.latitude&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;number - The latitude of the center of the map&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#write&#34;&gt;write&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguiviewsmaplongitude&#34;&gt;&lt;a href=&#34;#darktableguiviewsmaplongitude&#34;&gt;🔗&lt;/a&gt;darktable.gui.views.map.longitude&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;number - The longitude of the center of the map&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#write&#34;&gt;write&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;darktableguiviewsmapzoom&#34;&gt;&lt;a href=&#34;#darktableguiviewsmapzoom&#34;&gt;🔗&lt;/a&gt;darktable.gui.views.map.zoom&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;number - The current zoom level of the map&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#write&#34;&gt;write&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.views.print</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/print/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/print/</guid>
+      <description>&lt;p&gt;The print view&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_view_t/&#34;&gt;types.dt_lua_view_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.views.slideshow</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/slideshow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/slideshow/</guid>
+      <description>&lt;p&gt;The slideshow view&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_view_t/&#34;&gt;types.dt_lua_view_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>darktable.gui.views.tethering</title>
+      <link>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/tethering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.api.manual/darktable/gui/views/tethering/</guid>
+      <description>&lt;p&gt;The tethering view&lt;/p&gt;&#xA;&lt;p&gt;Attributes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/attributes/#has_tostring&#34;&gt;has_tostring&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../Attributes#parent&#34;&gt;parent&lt;/a&gt; : &lt;a href=&#34;https://darktable-org.github.io/luadocs/lua.api.manual/types/dt_lua_view_t/&#34;&gt;types.dt_lua_view_t&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

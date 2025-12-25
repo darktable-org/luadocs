@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lua Scripts Manual on darktable Lua documentation</title>
+    <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/</link>
+    <description>Recent content in Lua Scripts Manual on darktable Lua documentation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://darktable-org.github.io/luadocs/lua.scripts.manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>overview</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.manual/overview/</guid>
+      <description>&lt;p&gt;darktable can be customized and extended using the Lua programming language. The &lt;a href=&#34;https://github.com/darktable-org/lua-scripts&#34; target=&#34;_blank&#34;&gt;lua-scripts repository&lt;/a&gt;&#xA;contains the collected efforts of the darktable developers, maintainers, contributors and community.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>installation</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.manual/installation/</guid>
+      <description>&lt;h2 id=&#34;download-and-install&#34;&gt;&lt;a href=&#34;#download-and-install&#34;&gt;🔗&lt;/a&gt;Download and Install&lt;/h2&gt;&#xA;&lt;p&gt;The recommended method of installation is using git to clone the repository. This ensures that all dependencies on other scripts&#xA;are met as well as providing an easy update path.&lt;/p&gt;&#xA;&lt;h3 id=&#34;snap-packages&#34;&gt;&lt;a href=&#34;#snap-packages&#34;&gt;🔗&lt;/a&gt;snap packages&lt;/h3&gt;&#xA;&lt;p&gt;The snap version of darktable comes with lua included starting with version 2.4.3snap2.&lt;/p&gt;&#xA;&lt;p&gt;Ensure git is installed on your system. If it isn&amp;rsquo;t, use the package manager to install it. Then open a terminal and:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>troubleshooting</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.manual/troubleshooting/</guid>
+      <description>&lt;p&gt;Running darktable with Lua debugging enabled provides more information about what is occurring within the scripts.&lt;/p&gt;&#xA;&lt;h3 id=&#34;snap&#34;&gt;&lt;a href=&#34;#snap&#34;&gt;🔗&lt;/a&gt;Snap&lt;/h3&gt;&#xA;&lt;p&gt;Open a terminal and start darktable with the command &lt;code&gt;snap run darktable -d lua&lt;/code&gt;. This provides debugging information to give you insight into what is happening.&lt;/p&gt;&#xA;&lt;h3 id=&#34;linux&#34;&gt;&lt;a href=&#34;#linux&#34;&gt;🔗&lt;/a&gt;Linux&lt;/h3&gt;&#xA;&lt;p&gt;Open a terminal and start darktable with the command &lt;code&gt;darktable -d lua&lt;/code&gt;. This provides debugging information to give you insight into what is happening.&lt;/p&gt;&#xA;&lt;h3 id=&#34;macos&#34;&gt;&lt;a href=&#34;#macos&#34;&gt;🔗&lt;/a&gt;MacOS&lt;/h3&gt;&#xA;&lt;p&gt;Open a terminal and start darktable with the command &lt;code&gt;/Applications/darktable.app/Contents/MacOS/darktable -d lua&lt;/code&gt;. This provides debugging information to give you insight into what is happening.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

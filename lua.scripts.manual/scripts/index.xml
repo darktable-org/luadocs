@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scripts on darktable Lua documentation</title>
+    <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/</link>
+    <description>Recent content in scripts on darktable Lua documentation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>overview</title>
+      <link>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/overview/</guid>
+      <description>&lt;p&gt;darktable can be customized and extended using the Lua programming language. The &lt;a href=&#34;https://github.com/darktable-org/lua-scripts&#34; target=&#34;_blank&#34;&gt;lua-scripts repository&lt;/a&gt;&#xA;contains the collected&#xA;efforts of the darktable developers, maintainers, contributors and community. The following sections list the scripts&#xA;contained in the repository, whether they can be run by themselves (Standalone - Yes) or depend on other&#xA;scripts (Standalone - No), what operating systems they are known to work on (L - Linux, M - MacOS, W - Windows), and their purpose.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

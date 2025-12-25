@@ -1,0 +1,3605 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>darktable Lua documentation - get_libdoc</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+      
+
+    
+    
+	
+	    
+		<link rel="stylesheet" href="/luadocs/css/style.min.f8985c7237ce0fa38e0bf0146339b4fc4bcb564226a7b15e5a6f40c990b473d7.css" integrity="sha256-&#43;JhccjfOD6OOC/AUYzm0/EvLVkImp7FeWm9AyZC0c9c=" crossorigin="anonymous">
+	    
+	
+    
+
+
+      
+
+
+<script> var indexURL="https:\/\/darktable-org.github.io\/luadocs\/index.json"</script>
+<script src="/luadocs/js/jquery.js"></script>
+<script src="/luadocs/js/popper.js" type="module"></script>
+<script src="/luadocs/js/bootstrap.js"></script>
+<script src="/luadocs/js/lunr.js"></script>
+<script src="/luadocs/js/app.js"></script>
+
+
+      <meta property="og:url" content="https://darktable-org.github.io/luadocs/lua.scripts.manual/scripts/tools/get_libdoc/">
+<meta property="og:site_name" content="darktable Lua documentation">
+<meta property="og:title" content="get_libdoc">
+<meta property="og:description" content="🔗Name get_libdoc.lua - retrieve the included library documentation and output it as text
+🔗Description 🔗Usage start this script from script manager. Disable it after it finishes or it will generate the pages every time darktable runs. 🔗Additional Software Required 🔗Limitations 🔗Author 🔗Change Log">
+
+<meta property="og:image" content="https://darktable-org.github.io/luadocs//darktable.svg">
+<meta property="og:locale" content="en_us">
+<meta property="og:type" content="article">
+<meta property="article:section" content="lua.scripts.manual">
+
+    </head>
+    <body>
+        
+
+        <header class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+   <a class="navbar-brand" href="/luadocs" rel="home" title="darktable Lua documentation">
+	darktable Lua documentation
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+	    
+	</ul>
+        <ul>
+           <form class="form-inline my-2 my-lg-0">
+                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" autocomplete="off" aria-label="Search">
+           </form>
+        </ul>
+
+
+    </div>
+</header>
+
+<div id="search-results" class="search-results">
+</div>
+
+
+        <div class="container-fluid">
+	    <div class="row">
+		<div class="content col-sm-12 order-sm-1 col-md-9 mx-md-auto order-md-12">
+		    
+
+
+
+<div class="crumbs">
+    <span class="crumb">
+	
+
+
+
+<a href='/luadocs/'>Home</a> / <a href='/luadocs/lua.scripts.manual/'>Lua Scripts Manual</a> / <a href='/luadocs/lua.scripts.manual/scripts/'>scripts</a> / <a href='/luadocs/lua.scripts.manual/scripts/tools/'>tools</a> / get_libdoc
+    </span>
+</div>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/luadocs/lua.scripts.manual/scripts/tools/get_lib_manpages/" class="next">&lt; get_lib_manpages</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/luadocs/lua.scripts.manual/scripts/tools/script_manager/" class="prev">script_manager &gt;</a>
+	
+    </div>
+</div>
+
+
+<article role="main">
+
+    <h1 class="title">
+        get_libdoc
+    </h1>
+
+    
+
+    <h2 id="name"><a href="#name">🔗</a>Name</h2>
+<p>get_libdoc.lua - retrieve the included library documentation and output it as text</p>
+<h2 id="description"><a href="#description">🔗</a>Description</h2>
+<h2 id="usage"><a href="#usage">🔗</a>Usage</h2>
+<ul>
+<li>start this script from script manager.  Disable it after it finishes or it will generate the pages every time darktable runs.</li>
+</ul>
+<h2 id="additional-software-required"><a href="#additional-software-required">🔗</a>Additional Software Required</h2>
+<h2 id="limitations"><a href="#limitations">🔗</a>Limitations</h2>
+<h2 id="author"><a href="#author">🔗</a>Author</h2>
+<h2 id="change-log"><a href="#change-log">🔗</a>Change Log</h2>
+
+
+    
+</article>
+
+<div class="prev-next row">
+    <div class="col-6">
+    
+	<a href="/luadocs/lua.scripts.manual/scripts/tools/get_lib_manpages/" class="next">&lt; get_lib_manpages</a>
+	
+    </div>
+    <div class="col-6">
+    
+	<a href="/luadocs/lua.scripts.manual/scripts/tools/script_manager/" class="prev">script_manager &gt;</a>
+	
+    </div>
+</div>
+
+
+
+      </div>
+		<nav class="navigation col-sm-12 order-sm-12 col-md-3 order-md-1">
+		    <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/" class="">
+          Lua Scripts Manual
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/overview/" class="">
+          overview
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/installation/" class="">
+          installation
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/troubleshooting/" class="">
+          troubleshooting
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/" class="">
+          scripts
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/overview/" class="">
+          overview
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/" class="">
+          contrib
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/autogrouper/" class="">
+          AutoGrouper
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/auto_snapshot/" class="">
+          auto_snapshot
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/auto_tag_modified/" class="">
+          auto_tag_modified
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/autostyle/" class="">
+          autostyle
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/clear_gps/" class="">
+          clear_GPS
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/collecthelper/" class="">
+          CollectHelper
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/copy_attach_detach_tags/" class="">
+          copy_attach_detach_tags
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/cr2hdr/" class="">
+          cr2hdr
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/cycle_group_leader/" class="">
+          cycle_group_leader
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/dbmaint/" class="">
+          dbmaint
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/enfuseadvanced/" class="">
+          enfuseAdvanced
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/exportlut/" class="">
+          exportLUT
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/ext_editor/" class="">
+          ext_editor
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/face_recognition/" class="">
+          face_recognition
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/fujifilm_dynamic_range/" class="">
+          fujifilm_dynamic_range
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/fujifilm_ratings/" class="">
+          fujifilm_ratings
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/geojson_export/" class="">
+          geoJSON_export
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/geotoolbox/" class="">
+          geoToolbox
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/gimp/" class="">
+          gimp
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/gpx_export/" class="">
+          gpx_export
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/hdrmerge/" class="">
+          HDRMerge
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/hif_group_leader/" class="">
+          hif_group_leader
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/hugin/" class="">
+          hugin
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/image_stack/" class="">
+          image_stack
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/image_time/" class="">
+          image_time
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/jpg_group_leader/" class="">
+          jpg_group_leader
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/kml_export/" class="">
+          kml_export
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/labelstotags/" class="">
+          LabelsToTags
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/openinexplorer/" class="">
+          OpenInExplorer
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/passport_guide/" class="">
+          passport_guide
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/passport_guide_germany/" class="">
+          passport_guide_germany
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/pdf_slideshow/" class="">
+          pdf_slideshow
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/photils/" class="">
+          photils
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/quicktag/" class="">
+          quicktag
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/rate_group/" class="">
+          rate_group
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/rename_images/" class="">
+          rename_images
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/rename-tags/" class="">
+          rename_tags
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/rl_out_sharp/" class="">
+          RL_out_sharp
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/select_non_existing/" class="">
+          select_non_existing
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/select_untagged/" class="">
+          select_untagged
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/slideshowmusic/" class="">
+          slideshowMusic
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/transfer_hierarchy/" class="">
+          transfer_hierarchy
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/ultrahdr/" class="">
+          ultrahdr
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/contrib/video_ffmpeg/" class="">
+          video_ffmpeg
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/" class="">
+          examples
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/api_version/" class="">
+          api_version
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/darkroom_demo/" class="">
+          darkroom_demo
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/gettextexample/" class="">
+          gettextExample
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/gui_action/" class="">
+          gui_action
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/hello_world/" class="">
+          hello_world
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/lighttable_demo/" class="">
+          lighttable_demo
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/moduleexample/" class="">
+          moduleExample
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/multi_os/" class="">
+          multi_os
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/panels_demo/" class="">
+          panels_demo
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/preferenceexamples/" class="">
+          preferenceExample
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/printexamples/" class="">
+          printExamples
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/running_os/" class="">
+          running_os
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/examples/x-touch/" class="">
+          x-touch
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/" class="">
+          official
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/apply_camera_style/" class="">
+          apply_camera_style
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/check_for_updates/" class="">
+          check_for_updates
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/copy_paste_metadata/" class="">
+          copy_paste_metadata
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/delete_long_tags/" class="">
+          delete_long_tags
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/delete_unused_tags/" class="">
+          delete_unused_tags
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/enfuse/" class="">
+          enfuse
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/generate_image_txt/" class="">
+          generate_image_txt
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/image_path_in_ui/" class="">
+          image_path_in_ui
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/import_filter_manager/" class="">
+          import_filter_manager
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/import_filters/" class="">
+          import_filters
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/regenerate_thumbnails/" class="">
+          regenerate_thumbnails
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/save_selection/" class="">
+          save_selection
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/official/selection_to_pdf/" class="">
+          selection_to_pdf
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/tools/" class="">
+          tools
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/tools/executable_manager/" class="">
+          executable_manager
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/tools/gen_i18n_mo/" class="">
+          gen_i18n_mo
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/tools/get_lib_manpages/" class="">
+          get_lib_manpages
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/tools/get_libdoc/" class=" active">
+          get_libdoc
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.manual/scripts/tools/script_manager/" class="">
+          script_manager
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/" class="">
+          Lua Scripts Libraries API Manual
+      </a>
+
+   <ul>
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/" class="">
+          dtutils
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/details/" class="">
+          details
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/check_max_api_version/" class="">
+          check_max_api_version
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/check_min_api_version/" class="">
+          check_min_api_version
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/check_os/" class="">
+          check_os
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/deprecated/" class="">
+          deprecated
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/find_image_by_id/" class="">
+          find_image_by_id
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/gen_uuid/" class="">
+          gen_uuid
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/join/" class="">
+          join
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/prequire/" class="">
+          prequire
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/spairs/" class="">
+          spairs
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils/split/" class="">
+          split
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.debug/" class="">
+          dtutils.debug
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.debug/details/" class="">
+          details
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.debug/dprint/" class="">
+          dprint
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.debug/new_tracepoint/" class="">
+          new_tracepoint
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.debug/terse_dump/" class="">
+          terse_dump
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.debug/tracepoint/" class="">
+          tracepoint
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/" class="">
+          dtutils.file
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/details/" class="">
+          details
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/check_if_bin_exists/" class="">
+          check_if_bin_exists
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/check_if_file_exists/" class="">
+          check_if_file_exists
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/chop_filetype/" class="">
+          chop_filetype
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/create_unique_filename/" class="">
+          create_unique_filename
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/executable_path_widget/" class="">
+          executable_path_widget
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/file_copy/" class="">
+          file_copy
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/file_move/" class="">
+          file_move
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/filename_increment/" class="">
+          filename_increment
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/get_basename/" class="">
+          get_basename
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/get_executable_path_preference/" class="">
+          get_executable_path_preference
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/get_filename/" class="">
+          get_filename
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/get_filetype/" class="">
+          get_filetype
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/get_path/" class="">
+          get_path
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/mkdir/" class="">
+          mkdir
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/rmdir/" class="">
+          rmdir
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/sanitize_filename/" class="">
+          sanitize_filename
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/set_executable_path_preference/" class="">
+          set_executable_path_preference
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/split_filepath/" class="">
+          split_filepath
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.file/test_file/" class="">
+          test_file
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.log/" class="">
+          dtutils.log
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.log/details/" class="">
+          details
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.log/caller/" class="">
+          caller
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.log/engine/" class="">
+          engine
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.log/log_level/" class="">
+          log_level
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.log/msg/" class="">
+          msg
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/" class="">
+          dtutils.string
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/details/" class="">
+          details
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/escape_xml_characters/" class="">
+          escape_xml_characters
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/is_not_sanitized/" class="">
+          is_not_sanitized
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/sanitize/" class="">
+          sanitize
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/sanitize_lua/" class="">
+          sanitize_lua
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/strip_accents/" class="">
+          strip_accents
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/urlencode/" class="">
+          urlencode
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/clear_substitute_list/" class="">
+          clear_substitute_list
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/build_substitute_list/" class="">
+          build_substitute_list
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/substitute_list/" class="">
+          substitute_list
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.string/substitute/" class="">
+          substitute
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.system/" class="">
+          dtutils.system
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.system/details/" class="">
+          details
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.system/external_command/" class="">
+          external_command
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.system/launch_default_app/" class="">
+          launch_default_app
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.scripts.api.manual/dtutils.system/windows_command/" class="">
+          windows_command
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/" class="">
+          Lua API Manual
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/version/" class="">
+          Lua API Version
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/" class="">
+          darktable
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/overview/" class="">
+          overview
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.collection/" class="">
+          darktable.collection
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.configuration/" class="">
+          darktable.configuration
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.control/" class="">
+          darktable.control
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.database/" class="">
+          darktable.database
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.debug/" class="">
+          darktable.debug
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.films/" class="">
+          darktable.films
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.gettext/" class="">
+          darktable.gettext
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/" class="">
+          darktable.gui
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/overview/" class="">
+          darktable.gui overview
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/action/" class="">
+          darktable.gui.action
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/action_images/" class="">
+          darktable.gui.action_images
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/create_job/" class="">
+          darktable.gui.create_job
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/current_view/" class="">
+          darktable.gui.current_view
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/hovered/" class="">
+          darktable.gui.hovered
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/" class="">
+          darktable.gui.libs
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/overview/" class="">
+          darktable.gui.libs overview
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/backgroundjobs/" class="">
+          darktable.gui.libs.backgroundjobs
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/camera/" class="">
+          darktable.gui.libs.camera
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/collect/" class="">
+          darktable.gui.libs.collect
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/colorlabels/" class="">
+          darktable.gui.libs.colorlabels
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/colorpicker/" class="">
+          darktable.gui.libs.colorpicker
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/copy_history/" class="">
+          darktable.gui.libs.copy_history
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/darktable_label/" class="">
+          darktable.gui.libs.darktable_label
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/export/" class="">
+          darktable.gui.libs.export
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/filmstrip/" class="">
+          darktable.gui.libs.filmstrip
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/filter/" class="">
+          darktable.gui.libs.filter
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/geotagging/" class="">
+          darktable.gui.libs.geotagging
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/global_toolbox/" class="">
+          darktable.gui.libs.global_toolbox
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/hinter/" class="">
+          darktable.gui.libs.hinter
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/histogram/" class="">
+          darktable.gui.libs.histogram
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/history/" class="">
+          darktable.gui.libs.history
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/image/" class="">
+          darktable.gui.libs.image
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/import/" class="">
+          darktable.gui.libs.import
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/lighttable_mode/" class="">
+          darktable.gui.libs.lighttable_mode
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/live_view/" class="">
+          darktable.gui.libs.live_view
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/location/" class="">
+          darktable.gui.libs.location
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/map_settings/" class="">
+          darktable.gui.libs.map_settings
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/masks/" class="">
+          darktable.gui.libs.masks
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/metadata/" class="">
+          darktable.gui.libs.metadata
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/metadata_view/" class="">
+          darktable.gui.libs.metadata_view
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/modulegroups/" class="">
+          darktable.gui.libs.modulegroups
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/module_toolbox/" class="">
+          darktable.gui.libs.module_toolbox
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/navigation/" class="">
+          darktable.gui.libs.navigation
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/print_settings/" class="">
+          darktable.gui.libs.print_settings
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/ratings/" class="">
+          darktable.gui.libs.ratings
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/recentcollect/" class="">
+          darktable.gui.libs.recentcollect
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/select/" class="">
+          darktable.gui.libs.select
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/session/" class="">
+          darktable.gui.libs.session
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/snapshots/" class="">
+          darktable.gui.libs.snapshots
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/styles/" class="">
+          darktable.gui.libs.styles
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/tagging/" class="">
+          darktable.gui.libs.tagging
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/viewswitcher/" class="">
+          darktable.gui.libs.viewswitcher
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/libs/view_toolbox/" class="">
+          darktable.gui.libs.view_toolbox
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/mimic/" class="">
+          darktable.gui.mimic
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/panel_get_size/" class="">
+          darktable.gui.panel_get_size
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/panel_hide/" class="">
+          darktable.gui.panel_hide
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/panel_hide_all/" class="">
+          darktable.gui.panel_hide_all
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/panel_set_size/" class="">
+          darktable.gui.panel_set_size
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/panel_show/" class="">
+          darktable.gui.panel_show
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/panel_show_all/" class="">
+          darktable.gui.panel_show_all
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/panel_visible/" class="">
+          darktable.gui.panel_visible
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/selection/" class="">
+          darktable.gui.selection
+      </a>
+
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/views/" class="">
+          darktable.gui.views
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/views/overview/" class="">
+          darktable.gui.views overview
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/views/darkroom/" class="">
+          darktable.gui.views.darkroom
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/views/lighttable/" class="">
+          darktable.gui.views.lighttable
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/views/map/" class="">
+          darktable.gui.views.map
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/views/print/" class="">
+          darktable.gui.views.print
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/views/slideshow/" class="">
+          darktable.gui.views.slideshow
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/gui/views/tethering/" class="">
+          darktable.gui.views.tethering
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.guides/" class="">
+          darktable.guides
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.new_format/" class="">
+          darktable.new_format
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.new_storage/" class="">
+          darktable.new_storage
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.new_widget/" class="">
+          darktable.new_widget
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.password/" class="">
+          darktable.password
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.preferences/" class="">
+          darktable.preferences
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.print/" class="">
+          darktable.print
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.print_error/" class="">
+          darktable.print_error
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.print_hinter/" class="">
+          darktable.print_hinter
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.print_log/" class="">
+          darktable.print_log
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.print_toast/" class="">
+          darktable.print_toast
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.register_event/" class="">
+          darktable.register_event
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.destroy_event/" class="">
+          darktable.destroy_event
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.query_event/" class="">
+          darktable.query_event
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.register_lib/" class="">
+          darktable.register_lib
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.register_storage/" class="">
+          darktable.register_storage
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.destroy_storage/" class="">
+          darktable.destroy_storage
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.styles/" class="">
+          darktable.styles
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.tags/" class="">
+          darktable.tags
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/darktable/darktable.util/" class="">
+          darktable.util
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/" class="">
+          types
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/overview/" class="">
+          overview
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/_pdf_mode_t/" class="">
+          _pdf_mode_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/_pdf_pages_t/" class="">
+          _pdf_pages_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/avif_color_mode_e/" class="">
+          avif_color_mode_e
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/avif_compression_type_e/" class="">
+          avif_compression_type_e
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/avif_tiling_e/" class="">
+          avif_tiling_e
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/comp_type_t/" class="">
+          comp_type_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_collection_filter_t/" class="">
+          dt_collection_filter_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_collection_properties_t/" class="">
+          dt_collection_properties_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_collection_rating_comperator_t/" class="">
+          dt_collection_rating_comperator_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_collection_sort_order_t/" class="">
+          dt_collection_sort_order_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_collection_sort_t/" class="">
+          dt_collection_sort_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_exr_compression_t/" class="">
+          dt_imageio_exr_compression_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_j2k_format_t/" class="">
+          dt_imageio_j2k_format_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_j2k_preset_t/" class="">
+          dt_imageio_j2k_preset_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_avif/" class="">
+          dt_imageio_module_format_data_avif
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_copy/" class="">
+          dt_imageio_module_format_data_copy
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_exr/" class="">
+          dt_imageio_module_format_data_exr
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_j2k/" class="">
+          dt_imageio_module_format_data_j2k
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_jpeg/" class="">
+          dt_imageio_module_format_data_jpeg
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_jpegxl/" class="">
+          dt_imageio_module_format_data_jpegxl
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_pdf/" class="">
+          dt_imageio_module_format_data_pdf
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_pfm/" class="">
+          dt_imageio_module_format_data_pfm
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_png/" class="">
+          dt_imageio_module_format_data_png
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_ppm/" class="">
+          dt_imageio_module_format_data_ppm
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_tiff/" class="">
+          dt_imageio_module_format_data_tiff
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_webp/" class="">
+          dt_imageio_module_format_data_webp
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_data_xcf/" class="">
+          dt_imageio_module_format_data_xcf
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_format_t/" class="">
+          dt_imageio_module_format_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_storage_data_disk/" class="">
+          dt_imageio_module_storage_data_disk
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_storage_data_email/" class="">
+          dt_imageio_module_storage_data_email
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_storage_data_gallery/" class="">
+          dt_imageio_module_storage_data_gallery
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_storage_data_latex/" class="">
+          dt_imageio_module_storage_data_latex
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_storage_data_piwigo/" class="">
+          dt_imageio_module_storage_data_piwigo
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_imageio_module_storage_t/" class="">
+          dt_imageio_module_storage_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lib_collect_mode_t/" class="">
+          dt_lib_collect_mode_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lib_collect_params_rule_t/" class="">
+          dt_lib_collect_params_rule_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lighttable_layout_t/" class="">
+          dt_lighttable_layout_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_align_t/" class="">
+          dt_lua_align_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_backgroundjob_t/" class="">
+          dt_lua_backgroundjob_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_cairo_t/" class="">
+          dt_lua_cairo_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_ellipsize_mode_t/" class="">
+          dt_lua_ellipsize_mode_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_film_t/" class="">
+          dt_lua_film_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_image_t/" class="">
+          dt_lua_image_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_lib_t/" class="">
+          dt_lua_lib_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_orientation_t/" class="">
+          dt_lua_orientation_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_snapshot_t/" class="">
+          dt_lua_snapshot_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_tag_t/" class="">
+          dt_lua_tag_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_lua_view_t/" class="">
+          dt_lua_view_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_pdf_stream_encoder_t/" class="">
+          dt_pdf_stream_encoder_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_style_item_t/" class="">
+          dt_style_item_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_style_t/" class="">
+          dt_style_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_ui_container_t/" class="">
+          dt_ui_container_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/dt_ui_panel_t/" class="">
+          dt_ui_panel_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/hint_t/" class="">
+          hint_t
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_box/" class="">
+          lua_box
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_button/" class="">
+          lua_button
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_check_button/" class="">
+          lua_check_button
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_combobox/" class="">
+          lua_combobox
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_container/" class="">
+          lua_container
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_entry/" class="">
+          lua_entry
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_file_chooser_button/" class="">
+          lua_file_chooser_button
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_label/" class="">
+          lua_label
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_os_type/" class="">
+          lua_os_type
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_pref_type/" class="">
+          lua_pref_type
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_section_label/" class="">
+          lua_section_label
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_separator/" class="">
+          lua_separator
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_slider/" class="">
+          lua_slider
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_stack/" class="">
+          lua_stack
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_text_view/" class="">
+          lua_text_view
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/lua_widget/" class="">
+          lua_widget
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/types/snapshot_direction_t/" class="">
+          snapshot_direction_t
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li class="parent">
+      <i class="fa fa-plus-square toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/" class="">
+          events
+      </a>
+
+   <ul>
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/overview/" class="">
+          overview
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/collection-changed/" class="">
+          collection-changed
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/darkroom-image-history-changed/" class="">
+          darkroom-image-history-changed
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/darkroom-image-loaded/" class="">
+          darkroom-image-loaded
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/exit/" class="">
+          exit
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/global_toolbox-grouping_toggle/" class="">
+          global_toolbox-grouping_toggle
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/global_toolbox-overlay_toggle/" class="">
+          global_toolbox-overlay_toggle
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/image-group-information-changed/" class="">
+          image-group-information-changed
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/inter-script-communication/" class="">
+          inter-script-communication
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/intermediate-export-image/" class="">
+          intermediate-export-image
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/mouse-over-image-changed/" class="">
+          mouse-over-image-changed
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/pixelpipe-processing-complete/" class="">
+          pixelpipe-processing-complete
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/post-import-film/" class="">
+          post-import-film
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/post-import-image/" class="">
+          post-import-image
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/pre-import/" class="">
+          pre-import
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/selection-changed/" class="">
+          selection-changed
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/shortcut/" class="">
+          shortcut
+      </a>
+
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/events/view-changed/" class="">
+          view_changed
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   
+   <li>
+      <i class="no-toggle"></i>
+   
+
+      <a href="/luadocs/lua.api.manual/attributes/" class="">
+          attributes
+      </a>
+
+   </li>
+   </ul>
+   </li>
+   </ul>
+
+		</nav>
+	    </div>
+
+            
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+(function($) {
+  
+
+  $.fn.scrollToMiddle = function(options) {
+    var settings = $.extend({
+        duration: 0
+    }, options );
+
+    return this.each(function() {
+      var $el = $(this);
+      var elOffset = $el.offset().top;
+      var elHeight = $el.height();
+      var windowHeight = $(window).height();
+      var offset;
+      if (elHeight < windowHeight) {
+        offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+      }
+      else {
+        offset = elOffset;
+      }
+      $('.navigation').scrollTop(offset);
+    });
+  };
+}(jQuery));
+
+$('.navigation').css('opacity', '0');
+ $(document).ready(function(){
+     $('.parent ul').hide();
+     $('.navigation').css('opacity', 1.0);
+     $('.active').parents('ul').show();
+     $('.active').siblings('ul').show();
+     $('.active').children('i.toggle').removeClass("fa-plus-squre").addClass("fa-minus-square-o");
+     $('.active').parents('li').children('.toggle').removeClass("fa-plus-square").addClass("fa-minus-square-o");
+     $('.active').scrollToMiddle();
+
+     $('.toggle').on('click', function (e) {
+       e.stopPropagation();
+       $(this).siblings('ul').slideToggle();
+
+       if($(this).hasClass("fa-plus-square")) {
+           $(this).addClass("fa-minus-square-o");
+           $(this).removeClass("fa-plus-square");
+       }
+       else {
+           $(this).addClass("fa-plus-square");
+           $(this).removeClass("fa-minus-square-o");
+       }
+     });
+ });
+
+</script>
+
+
+<script>
+ var _paq = window._paq = window._paq || [];
+  
+ _paq.push(['trackPageView']);
+ _paq.push(['enableLinkTracking']);
+ (function() {
+     var u="https://piwik.kees.nl/";
+     _paq.push(['setTrackerUrl', u+'matomo.php']);
+     _paq.push(['setSiteId', '21']);
+     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+ })();
+</script>
+<noscript><p><img src="https://piwik.kees.nl/matomo.php?idsite=21&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+
