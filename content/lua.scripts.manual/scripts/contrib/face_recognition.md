@@ -8,7 +8,7 @@ author: "people"
 
 ## Name
 
-face_recognition.lua - Calls externel tool [face_recognition]() and applies the results
+face_recognition.lua - Calls externel tool [face_recognition](https://github.com/ageitgey/face_recognition/) and applies the results
 
 ## Description
 
