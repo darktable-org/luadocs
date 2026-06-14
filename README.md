@@ -2,7 +2,7 @@
 
 This is the user documentation for the [darktable](https://darktable.org) [Lua](https://lua.org) extensions. The content is authored in markdown and rendered to HTML using [Hugo](https://gohugo.io) and to PDF and ePub using the [DITA Open Toolkit](https://dita-ot.org).
 
-The auto-built version of the website can be found at https://darktable-org.github.io/luadocs/.
+The documentation is primarily hosted at https://docs.darktable.org/lua/stable/. The current auto-built version of the website can be found at https://darktable-org.github.io/luadocs/.
 
 ## Contributing
 
