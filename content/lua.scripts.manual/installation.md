@@ -6,6 +6,23 @@ draft: false
 author: "people"
 ---
 
+## darktable 5.6
+
+The lua-scripts are bundled in the release package starting with darktable 5.6 and no longer require a separate installation.
+
+### How the included scripts work
+
+During Lua initialization a search path is built to find the Lua scripts.  The last directory searched is the bundled scripts
+directory, so user installed scripts will always take priority.
+
+A user luarc file is no longer required, but can be used and will be executed by script_manager which is started by the system
+luarc file.
+
+### How are existing lua-scripts installations handled
+
+If the lua-scripts are already installed in the user's configuration directory, then they will take priority over the bundled
+lua-scripts.
+
 ## Download and Install
 
 The recommended method of installation is using git to clone the repository. This ensures that all dependencies on other scripts
