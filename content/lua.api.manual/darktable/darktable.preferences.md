@@ -121,8 +121,6 @@ Destroys a lua preference key and value.
 
 ```
 function(
-  script : string,
-  name : string,
 ) : return table of strings
 ```
 

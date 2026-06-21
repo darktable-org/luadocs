@@ -554,15 +554,17 @@ self.function(
 
 **NOTES:**
 * mipmap cache image sizes
-  - 0 - tiny
-  - 1 - 180 px
-  - 2 - 360 px
-  - 3 - 640 px
-  - 4 - 1920 px
-  - 5 - 2560 px
-  - 6 - 4096 px
-  - 7 - 5120 px
-  - 8 - full resolution
+  -  0 - tiny
+  -  1 - 180 px
+  -  2 - 360 px
+  -  3 - 640 px
+  -  4 - 1920 px
+  -  5 - 2560 px
+  -  6 - 4096 px
+  -  7 - 5120 px
+  -  8 - 6144
+  -  9 - 7680
+  - 10 - full resolution
 
 * To generate a single size mipmap image set start_size and end_size to the same value
 * When different min_size and max_size sizes are specified, every size mipmap from min_size to max_size is generated.
