@@ -19,7 +19,7 @@
           rsync
           gitFull
           perlPackages.Po4a
-          python311Packages.weasyprint
+          python3Packages.weasyprint
           lychee
           zip
         ];
