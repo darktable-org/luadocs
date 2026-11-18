@@ -1,0 +1,35 @@
+- overview.md
+
+- architecture
+  * source
+    - darktable
+      - external projects
+        - lua
+        - lua-scripts
+      - lua
+      - embedded code (#ifdef USE_LUA)
+  * release
+    - share dir
+
+- how Lua scripts are started
+  - system luarc
+  - script_manager
+  - user luarc
+
+- anatomy of a script
+  - requires
+  - libraries
+  - external libraries
+  - script_manager integration
+
+- how do scripts work?
+  - single threaded
+  - event driven
+    - lua event model
+      - shortcuts
+      - everything else
+        - FIFO
+  - objects
+  - data types
+
+
