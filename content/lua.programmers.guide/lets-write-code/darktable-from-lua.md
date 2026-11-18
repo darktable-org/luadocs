@@ -10,7 +10,7 @@ The lua interface allows you to use darktable from any lua script. This will loa
 
 As an example, the following program will print the list of all images in your library:
 
-```
+```lua
 #!/usr/bin/env lua
 package = require "package"
 package.cpath=package.cpath..";./lib/darktable/lib?.so"

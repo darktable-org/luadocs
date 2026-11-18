@@ -8,7 +8,7 @@ Our previous example was a bit limited. In particular the use of a preference fo
 
 UI elements are created via the `darktable.new_widget` function. This function takes a type of widget as a parameter and returns a new object corresponding to that widget. You can then set various fields in that widget to set its parameters. You will then use that object as a parameter to various functions that will add it to the darktable UI. The following simple example adds a lib in the lighttable view with a simple label:
 
-```
+```lua
 darktable = require "darktable"
 
 local my_label = darktable.new_widget("label")
@@ -21,7 +21,7 @@ darktable.register_lib("test","test",false,false,{
 
 There is a nice syntactic trick to make UI elements code easier to read and write. You can call these objects as functions with a table of key values as an argument. This allows the following example to work. It creates a container widget with two sub-widgets: a label and a text entry field.
 
-```
+```lua
 local my_widget = darktable.new_widget("box"){
   orientation = "horizontal",
   darktable.new_widget("label"){ label = "here => " },
@@ -31,7 +31,7 @@ local my_widget = darktable.new_widget("box"){
 
 Now that we know that, let's improve our script a bit.
 
-```
+```lua
 darktable = require "darktable"
 
 local scp_path = darktable.new_widget("entry"){

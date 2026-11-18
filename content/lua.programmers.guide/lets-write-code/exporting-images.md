@@ -8,7 +8,7 @@ So far we have learned to use Lua to adapt darktable to our particular workflow.
 
 In this next example we will use Lua to export via `scp`. A new storage type will appear in darktable's UI that will export images to a remote target via the copy mechanism in `ssh`.
 
-```
+```lua
 darktable = require "darktable"
 
 darktable.preferences.register("scp_export","export_path",

@@ -6,7 +6,7 @@ weight: 80
 
 So far, all of our lua code has been in _luarc_. That's a good way to develop your script but not very practical for distribution. We need to make this into a proper lua module. To do that, we save the code in a separate file (`scp-storage.lua` in this case):
 
-```
+```lua
 --[[
 SCP STORAGE
 a simple storage to export images via scp

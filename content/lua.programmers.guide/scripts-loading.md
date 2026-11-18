@@ -1,18 +1,16 @@
 ---
 title: how darktable loads scripts
 id: scripts-loading
-weight: 20
+weight: 15
 ---
-
-# Overview
 
 Scripts can register callbacks to perform actions on various darktable events. This callback mechanism is the primary method of triggering lua actions. 
 
-The central orchestrator for lua scripts is the [script manager](../lua.scripts.manual/scripts/tools/script_manager.md)., which spawns the utility module [_scripts_](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/lighttable/scripts/) in the lighttable and loads darktable's bundled scripts. 
+The central orchestrator for lua scripts is the [script manager](../lua.scripts.manual/scripts/tools/script_manager.md), which spawns the utility module [_scripts_](https://docs.darktable.org/usermanual/stable/en/module-reference/utility-modules/lighttable/scripts/) in the lighttable and loads darktable's bundled scripts. 
 
 Lua scripts can be disabled in [preferences/lua options](https://docs.darktable.org/usermanual/stable/en/preferences-settings/lua-options/).
 
-# How darktable loads scripts (and the script manager)
+## How darktable loads scripts (and the script manager)
 
 darktable treats two kinds of locations differently: files that are _executed_ as Lua code, and directories that are _scanned_ for scripts:
 
@@ -26,7 +24,7 @@ darktable treats two kinds of locations differently: files that are _executed_ a
 
 The [configuration directory](https://docs.darktable.org/usermanual/stable/en/preferences-settings/config-directory/) is specific to your OS. 
 
-# Loading your own scripts
+## Loading your own scripts
 
 You can __add your own scripts__ as follows:
 
@@ -39,6 +37,6 @@ You can __add your own scripts__ as follows:
     * Or keep the code in its own file and `require` through `luarc`: E.g. a script present in `[configuration-directory]/lua/userscript.lua` could be loaded by adding `require "userscript"` (note that .lua is omitted here).
 
 
-# lua-script installations from previous darktable versions
+## lua-script installations from previous darktable versions
 
 To remain compatible with scripts installed before darktable 5.6, `require` looks for a script manager in your configuration directory before loading the bundled one: if `[configuration-directory]/lua/tools/script_manager.lua` is present (for example from a manual pre-5.6 installation), _that_ script manager is run instead of the bundled one. 

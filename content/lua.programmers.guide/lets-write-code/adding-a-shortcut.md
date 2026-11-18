@@ -1,12 +1,12 @@
 ---
-title: adding a simple shortcut
-id: adding-a-simple-shortcut
-weight: 50
+title: adding a shortcut
+id: adding-a-shortcut
+weight: 30
 ---
 
 So far, all our scripts have done things during startup. This is of limited use and doesn't allow us to react to user actions. To do more advanced things we need to register a function that will be called on a given event. The most common event to react to is a keyboard shortcut.
 
-```
+```lua
 darktable = require "darktable"
 
 local function hello_shortcut(event, shortcut)
@@ -27,7 +27,7 @@ Once that function is defined, we register it as a shortcut callback. To do that
 
 Let's try a shortcut that is a little more interactive. This one will look at the images the user is currently interested in (selected or moused-over) and increase their rating:
 
-```
+```lua
 darktable = require "darktable"
 
 darktable.register_event("increase rating","shortcut",
@@ -64,7 +64,7 @@ stack traceback:
 
  This is lua's way of reporting errors. We have attempted to set a rating of 6 to an image, but a rating can only go as high as 5. It would be trivial to add a check, but let's show how to catch the error instead:
 
-```
+```lua
 darktable.register_event("increase rating","shortcut",
   function(event,shortcut)
     local images = darktable.gui.action_images

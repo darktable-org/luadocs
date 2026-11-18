@@ -4,9 +4,9 @@ id: printing-labeled-images
 weight: 40
 ---
 
-[The first example](a-simple-example) showed the very basics of Lua and allowed us to check that everything was working properly. Now let's do something a little bit more complex. Let's try to print a list of images that have a "red" label attached to them. But first of all, what is an image?
+[The first example](a-simple-script.md) showed the very basics of Lua and allowed us to check that everything was working properly. Now let's do something a little bit more complex. Let's try to print a list of images that have a "red" label attached to them. But first of all, what is an image?
 
-```
+```lua
 local darktable = require "darktable"
 local debug = require "darktable.debug"
 print(darktable.debug.dump(darktable.database[1]))
@@ -75,7 +75,7 @@ toplevel (userdata,dt_lua_image_t) : /images/100.JPG
 
 As we can see, an image has a large number of fields that provide all sort of information about it. Here, we are interested in the "red" label. This field is a boolean, and the documentation tells us that it can be written. We now just need to find all images with that field and print them out:
 
-```
+```lua
 darktable = require "darktable"
 for _,v in ipairs(darktable.database) do
   if v.red then
