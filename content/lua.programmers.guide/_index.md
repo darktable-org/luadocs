@@ -1,5 +1,5 @@
 ---
-title: Programmer's Guide
+title: Lua Programmer's Guide
 id: programmers-guide
 weight: 40
 draft: false
